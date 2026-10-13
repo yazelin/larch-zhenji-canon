@@ -1,23 +1,49 @@
 <!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>洛泉．袁真跡 · 史料考證</title><meta name="description" content="Larch 視覺小說《洛泉．袁真跡》的史料考證與原聲帶，不含劇情。">
-<style>/* 配色取自作品標題圖（夜色、藕荷色衣裳）與遊戲對話框的金色 */
-:root{color-scheme:dark;--bg:#1c191e;--card:#26222a;--fg:#ece6e0;--dim:#a79aa1;--accent:#cdb0b6;--gold:#d8b36a;--line:#3a343d}
-@media (prefers-color-scheme:light){:root{color-scheme:light;--bg:#f3eeef;--card:#fbf8f8;--fg:#2a2327;--dim:#7a6c72;--accent:#7b5566;--gold:#98722f;--line:#e0d5d8}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.85 "Noto Serif TC","Songti TC",serif}
-main{max-width:880px;margin:0 auto;padding:24px 16px 96px}h1{color:var(--accent);font-size:32px;letter-spacing:.04em}
-h2{color:var(--accent);border-bottom:1px solid var(--line);margin-top:48px;padding-bottom:4px}h3{margin-top:32px;color:var(--fg)}
+<title>洛泉．袁真跡 · 史料考證</title><meta name="description" content="Larch 視覺小說《洛泉．袁真跡》的史料考證：史書怎麼寫、我們查了什麼、哪裡是本作的設定。"><meta name="theme-color" content="#0f0c12">
+<style>:root{color-scheme:dark;--bg:#0f0c12;--card:#1a1520;--line:rgba(216,179,106,.26);--gold:#d8b36a;--gold2:#ecd08f;--accent:#cdb0b6;--mauve:#7b5566;--fg:#f1eaee;--dim:#a99da4}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.9 "Noto Serif TC","Noto Serif CJK TC","Songti TC",serif}
+a{color:var(--gold2)}
+.bg{position:fixed;inset:0;z-index:0;background:#000}
+.bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s ease}
+.bg img.on{opacity:1}
+.bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,7,12,.55),rgba(9,7,12,.2) 30%,rgba(9,7,12,.2) 70%,rgba(9,7,12,.55)),linear-gradient(180deg,rgba(9,7,12,.3),rgba(9,7,12,.1) 40%,rgba(9,7,12,.6))}
+main{position:relative;z-index:2;max-width:860px;margin:42vh auto 90px;padding:34px 30px 40px;background:rgba(13,10,16,.87);border:1px solid var(--line);
+  backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+h1{color:var(--gold2);font-size:clamp(28px,4.4vw,40px);letter-spacing:.06em;margin:0 0 6px;text-shadow:0 2px 12px #000}
+h1::after{content:"";display:block;width:72px;height:3px;background:var(--accent);margin-top:10px}
+h2{color:var(--gold2);font-size:23px;margin-top:56px;padding-left:12px;border-left:3px solid var(--accent)}h3{color:var(--fg);margin-top:34px}
 table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}
-td,th{border:1px solid var(--line);padding:6px 10px;vertical-align:top}th{background:var(--card);color:var(--accent)}
-a{color:var(--gold)}blockquote{color:var(--dim)}strong{color:var(--accent)}
-.play{display:inline-block;margin:8px 0 24px;padding:8px 18px;border:1px solid var(--gold);border-radius:6px;text-decoration:none;background:var(--card)}
-.hero img{display:block;width:100%;border-radius:8px;margin-bottom:12px;box-shadow:0 8px 32px rgba(0,0,0,.35)}.nav{font-size:15px;margin-bottom:8px}
-.tracks{padding-left:1.4em}.tracks li{margin:14px 0;padding:10px 12px;background:var(--card);border-radius:8px}.tracks li::marker{color:var(--dim)}
-.t b{display:block;color:var(--fg)}.t span{color:var(--dim);font-size:15px}audio{width:100%;margin-top:6px}
+td,th{border:1px solid var(--line);padding:7px 11px;vertical-align:top}th{background:var(--card);color:var(--gold2);font-weight:500}tr:nth-child(even) td{background:rgba(26,21,32,.5)}
+blockquote{margin:16px 0;padding:6px 16px;border-left:2px solid var(--gold);color:#d6cbd0;background:rgba(26,21,32,.6)}strong{color:var(--gold2);font-weight:600}
+.play{display:inline-block;margin:10px 0 22px;padding:6px 18px;border:1px solid var(--mauve);border-radius:18px;text-decoration:none;background:var(--mauve);color:#fff}
 .embed .play{display:none}
-footer{margin-top:64px;color:var(--dim);font-size:14px;border-top:1px solid var(--line);padding-top:16px}</style><script>if(window.self!==window.top)document.documentElement.classList.add("embed")</script></head><body><main><a class="hero" href="https://larch.ink/play/market/35e85c22-e262-4ad2-93ca-759f6d8c51f8"><img src="title_loop.avif" alt="洛泉．袁真跡"></a><nav class="nav"><a href="index.html">史料考證</a> · <a href="music.html">原聲帶</a></nav><h1>洛泉．袁真跡 · 史料考證</h1><a class="play" href="https://larch.ink/play/market/35e85c22-e262-4ad2-93ca-759f6d8c51f8">到 Larch 市集玩《洛泉．袁真跡》</a>
+.tracks{padding-left:1.4em}.tracks li{margin:14px 0;padding:10px 12px;background:var(--card)}.t b{display:block}.t span{color:var(--dim);font-size:15px}audio{width:100%;margin-top:6px}
+@media (max-width:640px){.bg img{object-position:50% 30%}main{margin-top:46vh;padding:24px 16px 32px}}
+.top{position:fixed;left:0;right:0;top:0;z-index:5;display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 24px 22px;
+  background:linear-gradient(180deg,rgba(9,7,12,.9),rgba(9,7,12,.6) 60%,rgba(9,7,12,0));text-shadow:0 1px 3px #000,0 0 12px rgba(0,0,0,.9)}
+.top .brand{margin:0;color:#ecd08f;font-size:21px;line-height:1.25;letter-spacing:.12em;font-weight:600;text-decoration:none;white-space:nowrap}
+.top .brand small{display:block;font-size:12.5px;font-weight:400;letter-spacing:.24em;color:#cdb0b6}
+.top .sub{color:#d6cbd0;font-size:13px}
+.top nav{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.top nav a{padding:3px 12px;border:1px solid rgba(216,179,106,.3);border-radius:14px;background:rgba(14,10,17,.58);color:#ecd08f;text-decoration:none;font-size:14.5px;line-height:1.7;white-space:nowrap}
+.top nav a.on{background:#7b5566;border-color:#7b5566;color:#fff}
+.embed .top nav a.ext{display:none}
+html,#list{scrollbar-width:thin;scrollbar-color:rgba(205,176,182,.55) rgba(14,10,17,.6)}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-track{background:rgba(14,10,17,.6)}
+::-webkit-scrollbar-thumb{background:rgba(205,176,182,.45);border-radius:5px;border:2px solid rgba(14,10,17,.6)}::-webkit-scrollbar-thumb:hover{background:#cdb0b6}
+@media (max-width:900px){.top{padding:10px 14px 16px;row-gap:6px}.top .brand{font-size:18px}.top .brand small{font-size:11.5px}.top .sub{display:none}.top nav{margin-left:0;gap:5px;flex-wrap:nowrap}.top nav a{padding:2px 7px;font-size:12px}}
+@media (max-width:520px){.top nav{gap:3px}.top nav a{padding:2px 4px;font-size:11px}}
+@media (max-width:400px){.top{padding-left:10px;padding-right:10px}.top nav{gap:2px}.top nav a{padding:2px 3px;font-size:10.5px}}
+footer.foot{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;
+  padding:20px 16px calc(10px + env(safe-area-inset-bottom));font-size:13px;color:#cfc4cb;text-shadow:0 1px 3px #000,0 0 10px #000;
+  background:linear-gradient(0deg,rgba(9,7,12,.92),rgba(9,7,12,.7) 60%,rgba(9,7,12,0))}
+footer.foot a{color:#ecd08f;text-decoration:none}</style><script>if(window.self!==window.top)document.documentElement.classList.add("embed")</script></head><body>
+<header class="top"><a class="brand" href="index.html"><small>洛泉．袁真跡</small>史料考證</a><span class="sub">史書怎麼寫、演義怎麼改、哪裡是本作的設定</span><nav><a class="ext" href="https://larch.ink/play/market/35e85c22-e262-4ad2-93ca-759f6d8c51f8" target="_blank" rel="noopener">到 Larch 玩</a><a href="story1.html">劇本與 CG</a><a href="characters.html">人物</a><a href="map.html">地圖</a><a href="settings.html">設定集</a><a href="music/">原聲帶</a><a href="index.html" class="on">史料考證</a></nav></header>
+<div class="bg" aria-hidden="true"><img class="on" src="https://cdn.jsdelivr.net/gh/yazelin/larch-zhenji-art@main/title/title_cover.webp" alt=""><img alt=""></div>
+<main><h1>洛泉．袁真跡 · 史料考證</h1><a class="play" href="https://larch.ink/play/market/35e85c22-e262-4ad2-93ca-759f6d8c51f8">到 Larch 市集玩《洛泉．袁真跡》</a>
 <p>《洛泉．袁真跡》是一部 Larch 視覺小說：建安九年鄴城破城之夜，袁紹的幼子袁尚墜入洛神祠的古泉，醒來成了嫂嫂甄氏的模樣，從此以甄氏的身分活在曹家。</p>
-<p>這一頁只整理故事背後的<strong>史料與考證</strong>：史書怎麼寫、我們查了什麼、哪裡是本作的設定。<strong>不含劇情與結局</strong>，玩之前看也不會被劇透。</p>
-<p>劇本裡凡是引用史書的地方，都照這一頁的考證寫；查不到或史書沒寫的，就標成「本作設定」。</p>
+<p>這一頁整理故事背後的<strong>史料與考證</strong>：史書怎麼寫、我們查了什麼、哪裡是本作的設定。這是遊戲的第六章，<strong>含劇情與結局</strong>，建議玩完五卷再看。</p>
+<p>劇本裡凡是引用史書的地方，都照這一頁的考證寫；查不到或史書沒寫的，就標成「本作設定」。引文都到維基文庫對過原文，異體字改成通行字。</p>
 <hr />
 <h2>一、年代表（史實）</h2>
 <table>
@@ -233,12 +259,31 @@ footer{margin-top:64px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <h3>「叡等自隨夫人，我當何憂」</h3>
 <p>216 年東征，甄氏病留鄴城；次年卞夫人回來，見她「顏色更盛」，問她為什麼。甄氏答：「叡等自隨夫人，我當何憂！」（〈文昭甄皇后傳〉裴注引《魏書》）</p>
 <h3>〈塘上行〉的作者</h3>
-<p>〈塘上行〉最早收在《玉臺新詠》與《藝文類聚》，《樂府詩集》列為相和歌辭清調曲。《玉臺新詠》題甄皇后作；《樂府解題》引《歌錄》另有魏文帝、魏武帝兩說。一般以甄后作為主流說法，本作採用。</p>
+<p><strong>結論：三說並列的原文在《文選》卷二十八陸機〈塘上行〉的李善注，引《歌錄》。《樂府詩集》卷三十五引的《歌錄》只有古辭、甄后兩說，《樂府解題》提到晉樂奏的是魏武帝的〈蒲生〉篇。本作採甄后說。</strong></p>
+<ul>
+<li>《文選》卷二十八，陸機〈塘上行〉題下李善注：「《歌錄》曰：〈塘上行〉，古辭。或云甄皇后造，或云魏文帝，或云武帝。」</li>
+<li>《樂府詩集》卷三十五（相和歌辭．清調曲）〈塘上行〉題解：</li>
+<li>引《鄴都故事》：甄后「為郭皇后所譖，文帝賜死後宮，臨終為詩曰：『蒲生我池中，綠葉何離離。……』」</li>
+<li>引《歌錄》：「〈塘上行〉，古辭，或云甄皇后造。」</li>
+<li>引《樂府解題》：「前志云晉樂奏魏武帝〈蒲生〉篇，而諸集錄皆言其詞文帝甄后所作，歎以讒訴見棄，猶幸得新好不遺故惡焉。」</li>
+<li>四庫全書本《樂府詩集》卷三十五標題下題的作者是「魏武帝」，收晉樂所奏的五解本，後面再收一個本辭。</li>
+</ul>
+<p>整理一下：題甄后作的有《玉臺新詠》、《鄴都故事》、《歌錄》的一說、《樂府解題》說的「諸集錄」；題魏文帝的只見《文選》李善注引《歌錄》；題魏武帝的有晉樂所奏與《歌錄》一說。本作採甄后說。</p>
+<p>兩個本子的結尾不同。晉樂所奏本最後一解是「出亦復苦愁，入亦復苦愁。邊地多悲風，樹木何蕭蕭」；本辭作「出亦復苦愁，入亦復苦愁。邊地多悲風，樹木何脩脩。從君致獨樂，延年壽千秋」。劇中引的「樹木何修修」照的是本辭（「脩」「修」通用）。</p>
 <h3>郭太后之死</h3>
 <p>史料有兩說：
 - 《漢晉春秋》：曹叡屢次問生母死狀，郭太后答「先帝自殺，何以責問我？且汝為人子，可追讎死父，為前母枉殺後母邪？」曹叡怒，逼殺之，令殯葬如甄后故事。
 - 《魏略》：郭太后憂懼暴崩，李夫人事後才說出甄后被讒害死、被髮覆面的經過。</p>
 <p>本作採《漢晉春秋》。</p>
+<p>《漢晉春秋》那一段，見《三國志》卷五〈文德郭皇后傳〉裴注，原文：</p>
+<ul>
+<li>「初，甄后之誅，由郭后之寵，及殯，令被髮覆面，以糠塞口。」</li>
+<li>「帝知之，心常懷忿，數泣問甄后死狀。」</li>
+<li>郭太后答：「先帝自殺，何以責問我？且汝為人子，可追讎死父，為前母枉殺後母邪？」</li>
+<li>「明帝怒，遂逼殺之，敕殯者使如甄后故事。」</li>
+</ul>
+<p>這段注文接在正文「青龍三年春，后崩於許昌」（235 年）之後。意思是：明帝（曹叡）知道生母死得冤，多次哭著問，郭后反問「先帝自殺，何以責問我」，還說兒子不該為前母報仇、殺後母。明帝大怒，逼死郭后，殯葬時照甄后當年的做法。劇本把這句改成白話：「是先帝自己要殺她，你來問我？」</p>
+<p>《魏略》那一條（同卷裴注）：「及太后崩，夫人乃說甄后見譖之禍，不獲大斂，被髮覆面。」夫人指李夫人。兩書對郭后怎麼死、甄后怎麼葬的說法不同，史料考證前面已並列。</p>
 <h3>李夫人</h3>
 <p>史書只有《魏略》兩句：甄后臨死「以帝屬李夫人」；郭太后死後，李夫人說出甄后見害之禍。她的出身、與甄后的交情史書都沒有寫，劇中的樣子是本作設定。</p>
 <h3>東鄉公主</h3>
@@ -247,11 +292,209 @@ footer{margin-top:64px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <p>〈陳思王植傳〉：219 年曹仁為關羽所圍，曹操以曹植為南中郎將往救，「植醉不能受命」。裴注引《魏氏春秋》說是曹丕臨行前逼他喝醉的。</p>
 <h3>首級與牽招</h3>
 <p>207 年遼東送來袁熙、袁尚的首級，懸於馬市示眾；袁尚舊部牽招在首級下設祭，曹操義之。（《三國志．牽招傳》）</p>
+<h3>袁尚貌美，袁紹想立他</h3>
+<p><strong>結論：本傳與裴注都記袁尚長得好，父母都偏愛他，袁紹想立他為嗣，沒來得及公開就死了。</strong></p>
+<ul>
+<li>本傳（〈袁紹傳〉）：「紹愛少子尚，貌美，欲以為後而未顯。」</li>
+<li>裴注引《典論》：「譚長而惠，尚少而美。紹妻劉氏愛尚，數稱其才，紹亦奇其貌，欲以為後，未顯而紹死。」</li>
+</ul>
+<p>同一條裴注的末尾記三兄弟的字：「譚字顯思。熙字顯弈。尚字顯甫。」劇中曹丕叫他「顯甫」，就是從這裡來。</p>
+<h3>劉夫人殺五妾</h3>
+<p><strong>結論：裴注引《典論》記劉夫人在袁紹死後、還沒入殮之前，殺了袁紹寵愛的五個妾，又剃髮塗面毀她們的形體；袁尚接著殺光這五人的家屬。</strong></p>
+<p>裴注引《典論》，緊接在上一條之後：「劉氏性酷妒，紹死，僵尸未殯，寵妾五人，劉盡殺之。以為死者有知，當復見紹於地下，乃髡頭墨面以毀其形。尚又為盡殺死者之家。」</p>
+<p>這一段出自曹丕自己寫的《典論》，作者是袁家的對頭，讀的時候要記得這一層。殺妾之後的事（屍體去了哪裡），史書沒有記載；本作讓五人沉進洛神祠的古泉，是本作設定。</p>
+<h3>鄴城之戰（204）</h3>
+<p><strong>結論：曹操從二月圍到八月；五月決漳水灌城，城中餓死過半；八月審配的姪子審榮夜開東門，城破，審配被擒，不屈而死。</strong></p>
+<ul>
+<li>〈武帝紀〉：「五月，毀土山、地道，作圍塹，決漳水灌城；城中餓死者過半。」「八月，審配兄子榮夜開所守城東門內兵。配逆戰，敗，生擒配，斬之。」</li>
+<li>〈袁紹傳〉寫得更細：曹軍挖的壕溝「周四十里，初令淺，示若可越。配望而笑之，不出爭利。太祖一夜掘之，廣深二丈，決漳水以灌之，自五月至八月，城中餓死者過半。」袁尚回救失敗，曹操把繳獲的「尚印綬、節鉞及衣物，以示其家，城中崩沮」。</li>
+<li>審榮開門：〈袁紹傳〉「配兄子榮守東門，夜開門內太祖兵」。</li>
+</ul>
+<p>審配最後的話，見〈袁紹傳〉裴注引《先賢行狀》：</p>
+<ul>
+<li>被押到帳下時，辛毗用馬鞭打他的頭，審配回罵：「狗輩，正由汝曹破我冀州，恨不得殺汝也！」</li>
+<li>曹操問：「知誰開卿城門？」審配說不知道。曹操說：「自卿子榮耳。」審配答：「小兒不足用乃至此！」</li>
+<li>曹操又問：「曩日孤之行圍，何弩之多也？」審配答：「恨其少耳！」曹操有意留他，但辛毗等人號哭不止，還是殺了。</li>
+<li>降將張子謙笑他，審配說：「汝為降虜，審配為忠臣，雖死，豈若汝生邪！」</li>
+<li>臨刑：「叱持兵者令北向，曰：『我君在北。』」</li>
+</ul>
+<p>另有一說：樂資《山陽公載記》與袁暐《獻帝春秋》說審配戰敗後躲進井裡被抓。裴松之認為「配一代之烈士，袁氏之死臣，豈當數窮之日，方逃身於井」，不採。本作照《先賢行狀》。</p>
+<h3>曹丕入袁府見甄氏，劉夫人在場</h3>
+<p><strong>結論：兩種裴注都記曹丕進袁府時，甄氏在劉夫人身邊；是劉夫人當面讓甄氏抬起頭來。細節兩書不同。</strong></p>
+<ul>
+<li>〈文昭甄皇后傳〉裴注引《魏略》：「及鄴城破，紹妻及后共坐皇堂上。文帝入紹舍，見紹妻及后，后怖，以頭伏姑膝上，紹妻兩手自搏。文帝謂曰：『劉夫人云何如此？令新婦舉頭！』姑乃捧后令仰，文帝就視，見其顏色非凡，稱嘆之。太祖聞其意，遂為迎取。」</li>
+<li>同卷裴注引《世語》：「太祖下鄴，文帝先入袁尚府，有婦人被髮垢面，垂涕立紹妻劉後，文帝問之，劉答『是熙妻』，顧攬髮髻，以巾拭面，姿貌絕倫。既過，劉謂后『不憂死矣』！遂見納，有寵。」</li>
+<li>《世說新語．惑溺》正文：「曹公之屠鄴也，令疾召甄，左右白：『五官中郎已將去。』公曰：『今年破賊正為奴。』」劉孝標注也引了《魏略》與《世語》，字句小有出入：《魏略》寫成曹丕對「袁夫人」說「扶甄令舉頭」；《世語》寫成「使令攬髮，以袖拭面」，劉夫人說的是「不復死矣」。</li>
+</ul>
+<p>《世語》說曹丕先進的是「袁尚府」，地點跟《魏略》的「紹舍」不同。劇中這一夜劉夫人捧起的臉是她自己的兒子，她認不出來。</p>
+<h3>甄氏九歲喜書；荒年勸家人散糧</h3>
+<p><strong>結論：喜書一事出自裴注引《魏書》；荒年勸家人散糧出自本傳，原文是拿存糧接濟親族鄰里，沒有「開倉」兩個字。</strong></p>
+<ul>
+<li>裴注引《魏書》：「年九歲，喜書，視字輒識，數用諸兄筆硯，兄謂后言：『汝當習女工。用書為學，當作女博士邪？』后答言：『聞古者賢女，未有不學前世成敗，以為己誡。不知書，何由見之？』」</li>
+<li>本傳：「後天下兵亂，加以饑饉，百姓皆賣金銀珠玉寶物，時后家大有儲穀，頗以買之。后年十餘歲，白母曰：『今世亂而多買寶物，匹夫無罪，懷璧為罪。又左右皆飢乏，不如以穀振給親族鄰里，廣為恩惠也。』舉家稱善，即從后言。」</li>
+</ul>
+<p>要留意：同卷裴松之評《魏書》，說它「其稱卞、甄諸后言行之善，皆難以實論」。《魏書》是魏國的官修史，寫后妃的好話要打折扣。九歲喜書、本頁前面卞夫人在孟津那幾條，都出自這部書。</p>
+<p>劇中真甄氏寫一手隸書，是從她少時愛讀書、用哥哥的筆硯這一條延伸出來的。</p>
+<h3>焦觸、張南叛，二袁奔烏桓（205）</h3>
+<p><strong>結論：205 年正月袁譚被殺的同一個月，袁熙的部將焦觸、張南倒戈，袁熙、袁尚逃往烏桓。</strong></p>
+<ul>
+<li>〈武帝紀〉建安十年：「是月，袁熙大將焦觸、張南等叛攻熙、尚，熙、尚奔三郡烏丸。觸等舉其縣降，封為列侯。」</li>
+<li>〈袁紹傳〉：「熙、尚為其將焦觸、張南所攻，奔遼西烏丸。」焦觸自號幽州刺史，殺白馬歃盟，只有別駕韓珩不肯：「吾受袁公父子厚恩，今其破亡，智不能救，勇不能死，於義闕矣；若乃北面於曹氏，所弗能為也。」</li>
+</ul>
+<p>「烏丸」就是烏桓，史書兩種寫法都有。〈武帝紀〉說「三郡烏丸」，〈袁紹傳〉說「遼西烏丸」，指的是同一批人，首領是遼西單于蹋頓。</p>
+<h3>白狼山之戰（207）</h3>
+<p><strong>結論：207 年八月，曹操在白狼山遇上袁尚、袁熙與烏桓聯軍，張遼為先鋒，斬蹋頓；二袁帶著幾千騎逃往遼東投公孫康。</strong></p>
+<p>〈武帝紀〉建安十二年：「八月，登白狼山，卒與虜遇，眾甚盛。公車重在後，被甲者少，左右皆懼。公登高，望虜陣不整，乃縱兵擊之，使張遼為先鋒，虜眾大崩，斬蹋頓及名王已下，胡、漢降者二十餘萬口。遼東單于速僕丸及遼西、北平諸豪，棄其種人，與尚、熙奔遼東，眾尚有數千騎。」</p>
+<p>曹操沒有追：「吾方使康斬送尚、熙首，不煩兵矣。」九月從柳城撤軍。</p>
+<p>〈烏丸傳〉記同一場仗，年份寫成建安十一年，地名寫成「凡城」，和〈武帝紀〉不同。一般從〈武帝紀〉作 207 年。</p>
+<h3>公孫康斬二袁：「頭顱方行萬里」</h3>
+<p><strong>結論：「頭顱方行萬里，何席之為」出自〈袁紹傳〉裴注引《典略》，說這句話的是袁熙，討蓆子的是袁尚。</strong></p>
+<p>裴注引《典略》：「尚為人有勇力，欲奪取康眾，與熙謀曰：『今到，康必相見，欲與兄手擊之，有遼東猶可以自廣也。』康亦心計曰：『今不取熙、尚，無以為說於國家。』乃先置其精勇於廄中，然後請熙、尚。熙、尚入，康伏兵出，皆縛之，坐於凍地。尚寒，求席，熙曰：『頭顱方行萬里，何席之為！』遂斬首。」</p>
+<p>本傳只寫「公孫康誘斬之，送其首」。〈武帝紀〉寫九月曹操撤軍後，「康即斬尚、熙及速僕丸等，傳其首」。同一條裴注又引《吳書》說袁尚有個弟弟袁買一起逃到遼東，《曹瞞傳》說袁買是袁尚的姪子，裴松之寫「未詳」。</p>
+<p>劇中跪在凍地上討蓆子的「袁尚」，是頂著他名字的親衛。</p>
+<h3>曹丕遣任氏</h3>
+<p><strong>結論：這一條出自〈文昭甄皇后傳〉裴注引《魏書》，原指示寫的《魏略》對不上。</strong></p>
+<p>裴注引《魏書》：「其後帝欲遣任氏，后請於帝曰：『任既鄉黨名族，德、色，妾等不及也，如何遣之？』帝曰：『任性狷急不婉順，前後忿吾非一，是以遣之耳。』后流涕固請……帝不聽，遂出之。」</p>
+<p>任氏只在這一段出現，名字、出身之外史書沒有別的記載。同樣出自《魏書》，裴松之「難以實論」那句評語也適用。</p>
+<h3>郭女王</h3>
+<p><strong>結論：本傳記她字「女王」，是父親說「此乃吾女中王也」取的；曹丕被定為繼承人，她出過主意。</strong></p>
+<p>〈文德郭皇后傳〉本傳：</p>
+<ul>
+<li>「后少而父永奇之曰：『此乃吾女中王也。』遂以女王為字。」</li>
+<li>「早失二親，喪亂流離，沒在銅鞮侯家。太祖為魏公時，得入東宮。」曹操封魏公在 213 年。</li>
+<li>「后有智數，時時有所獻納。文帝定為嗣，后有謀焉。」</li>
+<li>「甄后之死，由后之寵也。」</li>
+</ul>
+<p>裴注引《魏書》記她生於漢中平元年（184）三月，比曹丕大三歲。</p>
+<h3>甄氏失意、賜死</h3>
+<p><strong>結論：本傳只用一句話交代：曹丕稱帝後寵愛郭后、李貴人、陰貴人，甄氏失意有怨言，曹丕大怒，221 年六月遣使賜死。</strong></p>
+<p>〈文昭甄皇后傳〉本傳：「黃初元年十月，帝踐阼。踐阼之後，山陽公奉二女以嬪於魏，郭后、李、陰貴人並愛幸，后愈失意，有怨言。帝大怒，二年六月，遣使賜死，葬於鄴。」</p>
+<p>同處裴注引《魏書》說的完全是另一回事：曹丕三次下璽書要迎她入宮立后，她三讓，後來病重，「夏六月丁卯，崩於鄴」。裴松之直接駁回：「文帝之不立甄氏，及加殺害，事有明審」，說《魏書》「崇飾虛文」。本作照本傳。</p>
+<p>「被髮覆面，以糠塞口」見〈文德郭皇后傳〉裴注引《漢晉春秋》，本頁年代表已列。劇中那句「怨言」，就是他寫下的〈塘上行〉。</p>
+<h3>曹丕擊劍，與鄧展比劍</h3>
+<p><strong>結論：出自〈文帝紀〉評語下裴注引《典論．自敘》，曹丕自己寫的。他跟史阿學劍，酒席上拿甘蔗當劍，三次打中鄧展的手臂，最後一下正中額頭。</strong></p>
+<p>裴注引《典論》帝自敘：</p>
+<ul>
+<li>「余又學擊劍，閱師多矣，四方之法各異，唯京師為善。桓、靈之間，有虎賁王越善斯術，稱於京師。河南史阿言昔與越遊，具得其法，余從阿學之精熟。」</li>
+<li>「時酒酣耳熱，方食芋蔗，便以為杖，下殿數交，三中其臂，左右大笑。」</li>
+<li>鄧展不服再比，「余知其欲突以取交中也，因偽深進，展果尋前，余卻腳鄛，正截其顙，坐中驚視。」</li>
+</ul>
+<p>同一篇也寫他五歲學射、八歲能騎射，「每征，余常從」。</p>
+<h3>《典論．論文》「未若文章之無窮」</h3>
+<p><strong>結論：原文見《文選》卷五十二。寫作時間沒有確切記載，通說在曹丕當上魏太子（217 年十月）以後。</strong></p>
+<p>《文選》卷五十二〈典論論文〉：「蓋文章經國之大業，不朽之盛事。年壽有時而盡，榮樂止乎其身。二者必至之常期，未若文章之無窮。是以古之作者，寄身於翰墨，見意於篇籍，不假良史之辭，不託飛馳之勢，而聲名自傳於後。」</p>
+<p>時間的依據：</p>
+<ul>
+<li>〈文帝紀〉裴注引《魏書》：「帝初在東宮，疫癘大起，時人彫傷，帝深感歎……故論撰所著《典論》、詩賦，蓋百餘篇。」說的是他當太子、遇上大疫之後才編《典論》。大疫在 217 年。</li>
+<li>〈論文〉評建安七子，末尾說「融等已逝，唯幹著論，成一家言」，寫的時候七子已經都不在了。</li>
+</ul>
+<p>同一處裴注又引《吳歷》：「帝以素書所著《典論》及詩賦餉孫權，又以紙寫一通與張昭。」同一部書，送孫權的抄在絹上，送張昭的抄在紙上。</p>
+<h3>曹叡射鹿</h3>
+<p><strong>結論：出自〈明帝紀〉裴注引《魏末傳》。曹丕射殺母鹿，要曹叡射小鹿，曹叡哭著不射，曹丕從此定了立他的心。</strong></p>
+<p>〈明帝紀〉裴注引《魏末傳》：「帝常從文帝獵，見子母鹿。文帝射殺鹿母，使帝射鹿子，帝不從，曰：『陛下已殺其母，臣不忍復殺其子。』因涕泣。文帝即放弓箭，以此深奇之，而樹立之意定。」</p>
+<p>這條排在《魏略》之後：《魏略》說曹丕原本有意立「他姬子京兆王」，所以遲遲不立太子。本傳記曹叡「以其母誅，故未建為嗣」，直到曹丕病重的 226 年五月才立為太子。</p>
+<h3>〈洛神賦〉序「黃初三年」</h3>
+<p><strong>結論：序寫「黃初三年，余朝京師」，李善注認為應是黃初四年。</strong></p>
+<p>〈洛神賦〉序（《文選》卷十九）：「黃初三年，余朝京師，還濟洛川。古人有言，斯水之神，名曰宓妃。感宋玉對楚王神女之事，遂作斯賦。」</p>
+<p>李善注在「余從京域，言歸東藩」句下：「《魏志》曰：黃初三年，立植為鄄城王。四年，徙封雍丘。其年朝京師。又〈文紀〉曰：黃初三年，行幸許。又曰：四年三月，還雒陽宮。然京域謂雒陽，東蕃即鄄城。《魏志》及諸詩序並云四年朝，此云三年，誤。一云《魏志》三年不言植朝，蓋《魏志》略也。」</p>
+<p>李善的理由：黃初三年曹丕在許昌，不在洛陽，曹植無從到洛陽朝見；《魏志》與曹植其他詩序都記四年入朝。李善也留了另一說：《魏志》沒記三年入朝，可能只是漏寫。本頁年代表照序文列 222 年，兩說並存。</p>
+<h3>曹叡三子早夭，曹芳的來歷</h3>
+<p><strong>結論：〈明帝紀〉記曹叡三個兒子都沒養大；繼位的曹芳是養子，〈三少帝紀〉說宮中的事秘密，沒人知道他從哪裡來。</strong></p>
+<ul>
+<li>〈明帝紀〉：清河王曹冏，226 年立為王，當年十月死；繁陽王曹穆，228 年立，229 年六月死；安平哀王曹殷，231 年生，232 年五月死。</li>
+<li>〈三少帝紀〉：「齊王諱芳，字蘭卿。明帝無子，養王及秦王詢；宮省事祕，莫有知其所由來者。」裴注引《魏氏春秋》：「或云任城王楷子。」</li>
+</ul>
+<p>劇中袁家的血傳到曹叡為止，依據就是這兩條。</p>
+<h3>司馬懿託孤，到司馬炎受禪</h3>
+<p><strong>結論：曹叡病重時從外地急召司馬懿回京，與曹爽同受遺詔輔佐八歲的曹芳；高平陵之變（249）後曹魏大權到了司馬氏手上，254 年曹芳被廢，265 年司馬炎受魏帝禪位。</strong></p>
+<p>劇本裡只留一句「司馬家奪了曹家的天下」，這裡把史實補全。</p>
+<ul>
+<li><strong>急召回京</strong>。〈明帝紀〉景初三年（239）正月丁亥條下，裴注引《魏略》：「太尉宣王還至河內，帝驛馬召到，引入臥內……」太尉宣王就是司馬懿，當時正在班師途中。《晉書》卷一〈宣帝紀〉寫得更細：「帝大遽，乃乘追鋒車晝夜兼行，自白屋四百餘里，一宿而至。」這一段接在景初二年出征遼東的敘述之後。</li>
+<li><strong>「吾忍死待君」</strong>。《晉書》卷一〈宣帝紀〉：「引入嘉福殿臥內，升御床。帝流涕問疾，天子執帝手，目齊王曰：『以後事相託。死乃復可忍，吾忍死待君，得相見，無所復恨矣。』與大將軍曹爽並受遺詔輔少主。」〈明帝紀〉裴注引《魏氏春秋》的字句略有不同：「帝執宣王手，目太子曰：『死乃復可忍，朕忍死待君，君其與爽輔此。』」</li>
+<li><strong>曹芳八歲，抱司馬懿的脖子</strong>。同一處裴注，《魏略》記：「又教齊王令前抱宣王頸。」《魏氏春秋》記：「時太子芳年八歲，秦王九歲，在于御側。」曹芳當時封齊王，景初三年正月丁亥當天立為皇太子（〈三少帝紀〉：「景初三年正月丁亥朔，帝甚病，乃立為皇太子。是日，即皇帝位，大赦」），明帝當日崩於嘉福殿，年三十六。</li>
+<li><strong>高平陵之變</strong>（249）。《晉書》卷一〈宣帝紀〉：「嘉平元年春正月甲午，天子謁高平陵，爽兄弟皆從。」司馬懿趁皇帝離城，奏請廢曹爽兄弟，「乃收爽兄弟及其黨與何晏、丁謐、鄧颺、畢軌、李勝、桓範等誅之」。</li>
+<li><strong>254 年曹芳被廢</strong>。〈三少帝紀〉嘉平六年，太后令廢芳，「遣芳歸藩于齊，以避皇位」。</li>
+<li><strong>265 年司馬炎受禪</strong>。〈三少帝紀〉陳留王奐，咸熙二年十二月壬戌：「天祿永終，歷數在晉。詔群公卿士具儀設壇于南郊，使使者奉皇帝璽綬冊，禪位于晉嗣王，如漢魏故事。」《晉書》卷三〈武帝紀〉記晉方的儀式：「泰始元年冬十二月丙寅，設壇于南郊……魏帝稽協皇運，紹天明命以命炎。」咸熙二年與泰始元年是同一年，兩書的干支日不同，這裡照各書原文列出。</li>
+</ul>
+<p>從曹叡死（239）到禪位（265）二十六年。曹叡三子早夭、曹芳是來歷不明的養子，這一脈的血親在曹叡手上斷了；篡位的是託孤大臣，跟袁家無關，本作也不替這件事加戲。</p>
+<h3>《禮記．內則》：十年出就外傅</h3>
+<p><strong>結論：先秦禮書規定男孩十歲離開內室，到外面跟老師住，學書寫與計數。</strong></p>
+<p>《禮記．內則》：「十年，出就外傅，居宿於外，學書計，衣不帛襦褲。」外傅就是外面的老師；「居宿於外」是不再住在母親所在的內院。</p>
+<p>第四卷〈司馬門〉裡曹丕說「禮上說，十年出就外傅，居宿於外。叡兒十二了，明天搬到外院，跟先生住」，依據是這一句。《內則》寫的是十歲，劇本裡的叡兒是 217 年，足歲十二（205 年出生），已經比禮書規定的晚了兩年。曹叡幾歲搬出去，史書沒有記載，這是本作設定。</p>
+<h3>〈薤露〉是漢代挽歌</h3>
+<p><strong>結論：崔豹《古今注》說〈薤露〉〈蒿里〉本是田橫門人的喪歌，漢武帝時李延年分成兩曲，〈薤露〉送王公貴人；曹操借這個舊題寫了〈薤露行〉。</strong></p>
+<ul>
+<li>崔豹《古今注．音樂》：「〈薤露〉、〈蒿里〉，並喪歌也。出田橫門人。橫自殺，門人傷之，為之悲歌。言人命如薤上之露，易晞滅也。……至孝武時，李延年乃分為二曲。〈薤露〉送王公貴人，〈蒿里〉送士大夫庶人。使挽柩者歌之，世呼為挽歌。」</li>
+<li>《古今注》錄的歌詞：「薤上朝露何易晞，露晞明朝還復滋，人死一去何時歸。」《樂府詩集》卷二十七收的古辭作「薤上露，何易晞。露晞明朝更復落，人死一去何時歸」，字句不同。</li>
+<li>《樂府詩集》卷二十七同一條又引《樂府解題》，舉《左傳》齊將歌〈虞殯〉，說喪歌「不自田橫始」。</li>
+<li>曹操〈薤露行〉（《樂府詩集》卷二十七）開頭：「惟漢二十二世，所任誠不良。」寫的是何進、董卓之亂，借喪歌的題目哭漢室。</li>
+</ul>
+<p>《古今注》是西晉人寫的，田橫的故事是它的說法。</p>
 <hr />
 <h2>四、書寫與字體</h2>
-<p>東漢末年到三國初，正式場合寫隸書；楷書與行書由鍾繇等人推動，才剛萌芽。日常寫信、抄東西的手寫字，多半介於隸書與行書之間，比碑刻的隸書柔和；另有章草。本作的道具與字跡照這個年代來畫，不用後來的楷書字帖。</p>
+<p>東漢末到三國初，正式的文書用隸書，急件、書信用草書（後來叫章草）；行書剛由劉德升傳給鍾繇、胡昭，楷書要再晚一些才成形。寫在竹木簡、絹上，也寫在紙上。本作的道具與字跡照這個年代來畫。</p>
+<h3>隸書</h3>
+<p>衛恆《四體書勢》（《晉書．衛恆傳》收錄）：「秦既用篆，奏事繁多，篆字難成，即令隸人佐書，曰隸字。漢因行之，獨符、印璽、幡信、題署用篆。隸書者，篆之捷也。」</p>
+<p>漢代正式的隸書又叫「八分」，筆畫向左右開展，捺筆收尾有一道往右上挑的波勢。張懷瓘《書斷》卷上〈八分〉引王愔：「次仲始以古書方廣少波勢，建初中以隸草作楷法，字方八分，言有模楷。」書家後來把這種起筆藏鋒、收筆挑出的寫法叫「蠶頭燕尾」。</p>
+<p>漢末寫隸書的名家，《四體書勢》記了師宜官、梁鵠：師宜官「大則一字徑丈，小則方寸千言」；梁鵠後來投劉表，曹操破荊州後找到他，「魏武帝懸著帳中，及以釘壁玩之，以為勝宜官。今宮殿題署多是鵠篆」。曹家宮殿的匾額就出自他手。</p>
+<h3>章草</h3>
+<p>章草是草寫的隸書，字字分開，捺筆仍有波勢。</p>
+<ul>
+<li>《書斷》卷上〈章草〉：「案章草者，漢黃門令史游所作也。……王愔云：漢元帝時史游作《急就章》，解散隸體，粗書之，漢俗簡墮，漸以行之是也。」又說東漢章帝時杜度善草書，「上貴其跡，詔使草書上事。魏文帝亦令劉廣通草書上事。蓋因章奏，後世謂之章草。」章草名稱的由來，《書斷》列了不只一說。</li>
+<li>用途：崔瑗〈草書勢〉（收在《四體書勢》）說草書「應時諭指，用於卒迫。兼功并用，愛日省力」，是趕時間用的字。《書斷》說它起初「惟君長告令臣下則可」。</li>
+<li>張芝（字伯英）：《四體書勢》說他「凡家之衣帛，必書而後練之。臨池學書，池水盡黑」，「寸紙不見遺，至今世尤寶其書，韋仲將謂之草聖」。《書斷》：「章草之書，字字區別，張芝變為今草」，上下字牽連的今草從他開始。</li>
+</ul>
+<p>劇中袁顯甫寫的是軍中章草，依據在此。</p>
+<h3>行書與楷書</h3>
+<p>《四體書勢》：「魏初有鍾、胡二家為行書法，俱學之於劉德升，而鍾氏小異，然亦各有巧，今大行於世云。」鍾是鍾繇，胡是胡昭。</p>
+<p>楷書成形較晚。唐代張懷瓘《書斷》卷中把鍾繇列在「隸書」神品的第一位，唐人所說的「隸書」，學者一般認為就是今天的楷書；鍾繇因此被當成楷書的開山。建安年間的日常書寫，還看不到成熟的楷書。</p>
+<h3>紙與簡</h3>
+<ul>
+<li>《後漢書．宦者列傳．蔡倫傳》：「自古書契多編以竹簡，其用縑帛者謂之為紙。縑貴而簡重，並不便於人。倫乃造意，用樹膚、麻頭及敝布、魚網以為紙。元興元年奏上之，帝善其能，自是莫不從用焉，故天下咸稱『蔡侯紙』。」元興元年是 105 年。</li>
+<li>東漢末劉熙《釋名．釋書契》筆、硯、墨、紙、簡、札、牘並列：「紙，砥也，謂平滑如砥石也。」「札，櫛也，編之如櫛齒相比也。」「簡，間也，編之篇篇有間也。」</li>
+<li>到建安、黃初年間，紙與絹都在用：前面引過《吳歷》，曹丕的《典論》一份抄在絹上送孫權，一份抄在紙上送張昭。</li>
+</ul>
 <hr />
-<h2>五、本作設定（史書沒有寫的）</h2>
+<h2>五、地理</h2>
+<ul>
+<li><strong>鄴城</strong>：冀州州治，袁紹、袁尚的根據地，204 年城破後成了曹操的大本營。城西有漳水，曹操「決漳水灌城」用的就是這條河（〈武帝紀〉）。城西北有三臺，《水經注》卷十〈濁漳水〉：「城之西北有三臺，皆因城為之基，巍然崇舉，其高若山，建安十五年魏武所起。」中間是銅雀臺，「高十丈，有屋百一間」；南邊金虎臺；北邊冰井臺，「上有冰室，室有數井」。〈武帝紀〉記 210 年冬作銅雀臺、213 年九月作金虎臺。</li>
+<li><strong>洛陽</strong>：東漢的京城，董卓之亂被燒。曹操 220 年正月死在洛陽；曹丕稱帝後「初營洛陽宮」，定都於此（〈文帝紀〉）。曹植入朝、作〈洛神賦〉，都在洛陽一帶。</li>
+<li><strong>洛水</strong>：流經洛陽城南。〈洛神賦〉序「還濟洛川」，李善注：「洛川，洛水之川也。」傳說的洛水之神叫宓妃。本作的洛神祠設在鄴城，是本作設定。</li>
+<li><strong>平原</strong>：在鄴城東邊，青州平原郡。袁譚曾據守平原，204 年袁尚攻平原時，曹操趁虛圍鄴（〈袁紹傳〉）。211 年曹植封平原侯（〈陳思王植傳〉）。</li>
+<li><strong>中山</strong>：在鄴城北邊，冀州中山國。甄氏是「中山無極人」（〈文昭甄皇后傳〉）；204 年袁尚救鄴失敗，「尚奔中山」（〈袁紹傳〉）。</li>
+<li><strong>幽州</strong>：冀州以北，今北京一帶。袁熙出鎮幽州，甄氏「留養姑」（〈文昭甄皇后傳〉），所以城破時她在鄴城。</li>
+<li><strong>烏桓柳城</strong>：遼西烏桓的大本營，在幽州塞外。207 年曹操出盧龍塞，「東指柳城」，在白狼山打敗烏桓（〈武帝紀〉）。</li>
+<li><strong>遼東襄平</strong>：遼東郡治，公孫氏的根據地。公孫度「本遼東襄平人也」（〈公孫度傳〉）。207 年二袁逃到這裡，被公孫康所殺。</li>
+<li><strong>孟津</strong>：洛陽北邊的黃河渡口。211 年曹操西征關中，卞夫人隨軍「留孟津」（〈文昭甄皇后傳〉裴注引《魏書》）。</li>
+<li><strong>譙</strong>：曹家的故鄉，曹操是「沛國譙人」（〈武帝紀〉）。魏建國後，《水經注》說：「魏因漢祚，復都洛陽，以譙為先人本國，許昌為漢之所居，長安為西京之遺跡，鄴為王業之本基，故號『五都』也。」</li>
+</ul>
+<hr />
+<h2>六、器物</h2>
+<p>劇中出現的幾樣東西，漢末是什麼樣子。</p>
+<h3>燈與蠟燭</h3>
+<p>漢代夜裡主要點油燈，燒的是動植物的油脂，有陶燈也有青銅燈。河北滿城漢墓出土的長信宮燈，宮女跪坐捧燈，煙從袖子進到中空的身體裡；燈罩上的殘留物推測是動物脂肪或蠟。</p>
+<p>蠟燭在漢代有，但稀罕：</p>
+<ul>
+<li>《西京雜記》卷四記閩越王獻給漢高帝「石蜜五斛、蜜燭二百枚」，當成貢品。</li>
+<li>西晉石崇鬥富，「用蠟燭作炊」（《世說新語．汰侈》），可見到西晉還是豪奢的象徵。</li>
+<li>清代洪亮吉《北江詩話》卷四考過：古人的燭「或用麻，或用木蓼，或用胡麻，或用脂膏」，東漢《潛夫論》才出現「脂蠟明燈」，「三國以後，方屢見於書」，結論是「蠟燭容起於東漢以後」。他也懷疑《西京雜記》那條不可靠。</li>
+</ul>
+<p>所以袁府、曹府夜裡點的，以油燈為主。</p>
+<h3>席與榻</h3>
+<p>漢末人坐在地上的席，或坐在矮榻上。劉熙《釋名．釋床帳》：「人所坐臥曰床」，「長狹而卑曰榻，言其鵪榻然近地也。小者獨坐，主人無二，獨所坐也。」「席，釋也，可卷可釋也。」同一篇列了床、榻、枰、几、筵、席、簟、褥，沒有椅子。</p>
+<h3>輦與輿</h3>
+<p>漢末人抬的代步工具叫輦、輿。《釋名．釋車》：「輦車，人所輦也。」「輿，舉也。」〈明悼毛皇后傳〉記曹叡寵毛氏，「出入與同輿輦」。「轎」這個名稱與有廂的轎子，要到宋代才普遍，宋以前多叫肩輦、步輦。</p>
+<h3>銅鏡</h3>
+<p>《釋名．釋首飾》：「鏡，景也，言有光景也。」漢代的鏡子是青銅鑄的，背面有紐與紋飾，正面磨亮照人。劇中甄夫人對著銅鏡練笑，就是這種鏡子。</p>
+<h3>簪、笄與釵</h3>
+<p>《釋名．釋首飾》：「笄，係也，所以係冠使不墜也。」「簪，兟也，以兟連冠於髮也。」又有「爵釵，釵頭及上施爵也」，爵就是雀，釵頭上做成鳥形的釵。劇中的金燕簪是本作設計，形制與漢代鳥形髮飾相近。</p>
+<h3>耳杯</h3>
+<p>漢代喝酒用的杯子，橢圓、淺腹，兩側各有一個半月形的耳，所以叫耳杯，也叫羽觴。從戰國用到魏晉，各地漢墓出土很多，有漆、銅、陶等材質；漆耳杯最常見。</p>
+<p>本作設定：第五卷〈餞行〉（曹植出征前夜，甄夫人替他斟酒）用的是漆耳杯，黑外紅裡的淺橢圓杯；〈被髮覆面〉賜死那一幕用的是青銅高腳酒杯，兩場的杯子不是同一種。賜死用的酒壺是東漢的青銅提梁壺，圓肚、有蓋鈕、一個短壺嘴。史書沒有記載賜死用什麼杯子，兩種杯形都是本作的選擇。</p>
+<h3>喪服</h3>
+<p>漢代的喪服用麻布，依親疏分等級。《釋名．釋喪制》：「三日不生，生者成服曰縗。」「絞帶，絞麻緦為帶也。三年之縗曰斬，不緝其末，直翦斬而已。」妻為夫服最重的斬衰，用最粗的麻布，衣邊剪開後不縫。</p>
+<hr />
+<h2>七、本作設定（史書沒有寫的）</h2>
 <p>以下是本作為了故事補上的地方，史書沒有記載，也沒有否定：</p>
 <ul>
 <li>官渡之戰那年（200），袁尚十六歲隨父從軍。</li>
@@ -259,6 +502,11 @@ footer{margin-top:64px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <li>郭女王於建安十八年（213）進曹丕府中。</li>
 <li>216 年東征時曹植的去向，史書空白，本作讓他留在鄴城。</li>
 <li>袁紹「發病歐血」寫成回鄴城後吐血在案上。</li>
+<li>洛神祠設在鄴城，劉夫人殺的五個寵妾沉進祠底的古泉。</li>
+<li>204 年袁尚沒有逃往中山，帶殘兵殺回城中；鄴城破城那夜他墜入古泉，變成甄氏的樣子。</li>
+<li>207 年遼東送來的「袁尚」首級，是頂著他名字的親衛。</li>
+<li>〈燕歌行〉的第一份定本，是他用章草謄的；〈塘上行〉是他寫的，用的是嫂嫂的隸書。</li>
+<li>曹丕收著一口從袁府抄來的箱子，裡面是袁顯甫的軍令與他後來寫的詩、信。</li>
 </ul>
 <hr />
 <h2>出處連結</h2>
@@ -272,5 +520,62 @@ footer{margin-top:64px;color:var(--dim);font-size:14px;border-top:1px solid var(
 <li>《曹子建集》卷一：<a href="https://zh.wikisource.org/wiki/曹子建集/卷一" target="_blank" rel="noopener">https://zh.wikisource.org/wiki/曹子建集/卷一</a></li>
 <li>《世說新語．規箴》：<a href="https://zh.wikisource.org/wiki/世說新語/規箴" target="_blank" rel="noopener">https://zh.wikisource.org/wiki/世說新語/規箴</a></li>
 <li>《爾雅注疏》卷四：<a href="https://zh.wikisource.org/wiki/爾雅註疏/卷04" target="_blank" rel="noopener">https://zh.wikisource.org/wiki/爾雅註疏/卷04</a></li>
-</ul>
-<footer>內容授權 CC BY-NC 4.0 · 林亞澤 · 這一頁由程式產生，來源是私有 repo 的 zhenji/</footer></main></body></html>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷01" target="_blank" rel="noopener">《三國志》卷一〈武帝紀〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷02" target="_blank" rel="noopener">《三國志》卷二〈文帝紀〉（裴注引《典論．自敘》、《魏書》、《吳歷》）</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷03" target="_blank" rel="noopener">《三國志》卷三〈明帝紀〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷04" target="_blank" rel="noopener">《三國志》卷四〈三少帝紀〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷05" target="_blank" rel="noopener">《三國志》卷五〈后妃傳〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/晉書/卷001" target="_blank" rel="noopener">《晉書》卷一〈宣帝紀〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/晉書/卷003" target="_blank" rel="noopener">《晉書》卷三〈武帝紀〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/禮記/內則" target="_blank" rel="noopener">《禮記．內則》</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷06" target="_blank" rel="noopener">《三國志》卷六〈袁紹傳〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷08" target="_blank" rel="noopener">《三國志》卷八〈公孫度傳〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷19" target="_blank" rel="noopener">《三國志》卷十九〈陳思王植傳〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/三國志/卷30" target="_blank" rel="noopener">《三國志》卷三十〈烏丸傳〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/世說新語/惑溺" target="_blank" rel="noopener">《世說新語．惑溺》</a></li>
+<li><a href="https://zh.wikisource.org/wiki/世說新語/汰侈" target="_blank" rel="noopener">《世說新語．汰侈》</a></li>
+<li><a href="https://zh.wikisource.org/wiki/昭明文選/卷19" target="_blank" rel="noopener">《昭明文選》卷十九〈洛神賦〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/昭明文選/卷28" target="_blank" rel="noopener">《昭明文選》卷二十八陸機〈塘上行〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/昭明文選/卷52" target="_blank" rel="noopener">《昭明文選》卷五十二〈典論論文〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/樂府詩集_(四庫全書本)/卷027" target="_blank" rel="noopener">《樂府詩集》卷二十七（四庫全書本）</a></li>
+<li><a href="https://zh.wikisource.org/wiki/樂府詩集_(四庫全書本)/卷035" target="_blank" rel="noopener">《樂府詩集》卷三十五（四庫全書本）</a></li>
+<li><a href="https://zh.wikisource.org/wiki/古今注" target="_blank" rel="noopener">崔豹《古今注》</a></li>
+<li><a href="https://zh.wikisource.org/wiki/四體書勢" target="_blank" rel="noopener">衛恆《四體書勢》</a></li>
+<li><a href="https://zh.wikisource.org/wiki/書斷_(四庫全書本)/卷上" target="_blank" rel="noopener">張懷瓘《書斷》卷上</a></li>
+<li><a href="https://zh.wikisource.org/wiki/書斷_(四庫全書本)/卷中" target="_blank" rel="noopener">張懷瓘《書斷》卷中</a></li>
+<li><a href="https://zh.wikisource.org/wiki/後漢書/卷78" target="_blank" rel="noopener">《後漢書》卷七十八〈蔡倫傳〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/釋名/卷四" target="_blank" rel="noopener">劉熙《釋名》卷四〈釋首飾〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/釋名/卷六" target="_blank" rel="noopener">劉熙《釋名》卷六〈釋床帳〉〈釋書契〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/釋名/卷七" target="_blank" rel="noopener">劉熙《釋名》卷七〈釋車〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/釋名/卷八" target="_blank" rel="noopener">劉熙《釋名》卷八〈釋喪制〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/水經注/10" target="_blank" rel="noopener">《水經注》卷十〈濁漳水〉</a></li>
+<li><a href="https://zh.wikisource.org/wiki/西京雜記/卷四" target="_blank" rel="noopener">《西京雜記》卷四</a></li>
+<li><a href="https://zh.wikisource.org/wiki/北江詩話/卷4" target="_blank" rel="noopener">洪亮吉《北江詩話》卷四</a></li>
+<li><a href="https://zh.wikipedia.org/zh-tw/長信宮燈" target="_blank" rel="noopener">長信宮燈（維基百科）</a></li>
+<li><a href="https://zh.wikipedia.org/zh-tw/羽觴" target="_blank" rel="noopener">羽觴（維基百科）</a></li>
+<li><a href="https://zh.wikipedia.org/zh-tw/轎" target="_blank" rel="noopener">轎（維基百科）</a></li>
+</ul></main>
+<footer class="foot"><span>洛泉．袁真跡 · 作者 亞澤 · 配樂由 Google Gemini 生成 · 內容授權 CC BY-NC 4.0</span><a href="index.html">史料考證</a><a href="https://github.com/yazelin/larch-zhenji-canon" target="_blank" rel="noopener" target="_blank" rel="noopener">GitHub</a><a href="https://buymeacoffee.com/yazelin" target="_blank" rel="noopener" target="_blank" rel="noopener">請我喝咖啡</a></footer>
+<script>(function(){var L=document.querySelectorAll('.bg img');if(L.length<2)return;var cur=0,shown=L[0].src;
+function show(src){if(!src||src===shown)return;shown=src;var n=L[1-cur];n.onload=function(){n.classList.add('on');L[cur].classList.remove('on');cur=1-cur};n.src=src}
+var figs=document.querySelectorAll('figure.cg img');if(!figs.length||!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)show((e.target.currentSrc||e.target.src).replace('/thumbs/','/cg/'))})},{rootMargin:'-45% 0px -45% 0px'});
+figs.forEach(function(f){io.observe(f)})})()</script><script>
+/* yz-promo-footer (trimmed) | 三件套+BMC 注意力效果 | https://github.com/yazelin/promo-footer-skill
+   對 footer 既有的 Buy Me a Coffee 連結加 bobbing + 講話氣泡（不重新注入連結）。 */
+(function(){"use strict";
+if(window.__yzPromoInit)return;window.__yzPromoInit=1;
+try{if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return}catch(e){}
+var LINES=["嘿，這裡這裡，我是咖啡按鈕","我是一顆很努力的按鈕，求被點一下","噓，亞澤不知道我在偷偷拉贊助","你看我跳得這麼賣力，不請一杯嗎？","不請也沒關係，你來玩我就很開心","一杯咖啡，是下一個作品的燃料","你的咖啡會變成下一個作品，真的","咖啡因進入亞澤體內，程式碼就會自己寫完","用愛發電中，咖啡因可提升發電效率","覺得好玩嗎？抖內一下下","這個網站沒有廣告，只有我這顆按鈕"];
+var CSS="@keyframes yzIdle{0%,55%,100%{transform:translateY(0)}62%{transform:translateY(-4px)}70%{transform:translateY(0)}78%{transform:translateY(-2px)}84%{transform:translateY(0)}}.yz-idle{animation:yzIdle 2.6s ease-in-out infinite}@keyframes yzHop{0%,100%{transform:translateY(0)}20%{transform:translateY(-6px) scale(1.04)}40%{transform:translateY(0) scale(1)}55%{transform:translateY(-3px)}70%{transform:translateY(0)}}.yz-hop{animation:yzHop .9s cubic-bezier(.36,.07,.19,.97)}.yz-bubble{position:fixed;z-index:2147483000;max-width:200px;padding:6px 11px;border-radius:14px;background:#fffdf7;color:#4a3f35;border:1px solid rgba(0,0,0,.1);box-shadow:0 4px 14px rgba(0,0,0,.18);font:13px/1.5 system-ui,-apple-system,'Noto Sans TC',sans-serif;pointer-events:none;opacity:0;transform:translateY(5px);transition:opacity .25s ease,transform .25s ease}.yz-bubble.yz-on{opacity:1;transform:translateY(0)}.yz-bubble::after{content:'';position:absolute;left:var(--yz-tail,50%);margin-left:-6px;border:6px solid transparent}.yz-bubble.yz-above::after{bottom:-6px;border-bottom:0;border-top:6px solid #fffdf7}.yz-bubble.yz-below::after{top:-6px;border-top:0;border-bottom:6px solid #fffdf7}";
+var bubble,anchor;
+function addCss(){if(document.getElementById("yz-promo-css"))return;var s=document.createElement("style");s.id="yz-promo-css";s.textContent=CSS;document.head.appendChild(s)}
+function findAnchor(){var as=document.querySelectorAll('a[href*="buymeacoffee.com/yazelin"]');if(!as.length)return null;var vis=[],i,r;for(i=0;i<as.length;i++){r=as[i].getBoundingClientRect();if(r.width||r.height)vis.push(as[i])}var pool=vis.length?vis:[].slice.call(as);return pool[pool.length-1]}
+function hop(){anchor.classList.remove("yz-hop");void anchor.offsetWidth;anchor.classList.add("yz-hop")}
+var shown=0,MAX_SHOWS=3;
+function say(){if(document.hidden)return;var r=anchor.getBoundingClientRect();if(!r.width&&!r.height)return;if(r.bottom<0||r.top>innerHeight)return;if(shown>=MAX_SHOWS)return;shown++;bubble.textContent=LINES[Math.floor(Math.random()*LINES.length)];bubble.classList.remove("yz-on","yz-above","yz-below");bubble.style.left="0px";bubble.style.top="0px";var bw=bubble.offsetWidth,bh=bubble.offsetHeight,cx=r.left+r.width/2;var left=Math.max(8,Math.min(cx-bw/2,innerWidth-bw-8));var above=r.top-bh-12>=8;bubble.style.left=left+"px";bubble.style.top=(above?r.top-bh-12:r.bottom+12)+"px";bubble.classList.add(above?"yz-above":"yz-below");bubble.style.setProperty("--yz-tail",Math.max(12,Math.min(cx-left,bw-12))+"px");hop();requestAnimationFrame(function(){bubble.classList.add("yz-on")});setTimeout(function(){bubble.classList.remove("yz-on")},4200)}
+function start(){addCss();anchor=findAnchor();if(!anchor)return false;try{if(getComputedStyle(anchor).display==="inline")anchor.style.display="inline-block"}catch(e){}anchor.classList.add("yz-idle");anchor.addEventListener("animationend",function(e){if(e.animationName==="yzHop")anchor.classList.remove("yz-hop")});bubble=document.createElement("div");bubble.className="yz-bubble";bubble.setAttribute("aria-hidden","true");document.body.appendChild(bubble);window.__yzPromo=say;(function loop(first){if(shown>=MAX_SHOWS)return;setTimeout(function(){say();loop(false)},first?18e3+Math.random()*12e3:9e4+Math.random()*9e4)})(true);return true}
+function boot(){var tries=0;(function t(){if(start())return;if(++tries<20)setTimeout(t,1500)})()}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);else boot();
+})();
+</script></body></html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>洛泉．袁真跡 · 設定集</title><meta name="description" content="《洛泉．袁真跡》設定集：作者的設定筆記，全部劇透。"><meta name="theme-color" content="#0f0c12">
+<style>:root{color-scheme:dark;--bg:#0f0c12;--card:#1a1520;--line:rgba(216,179,106,.26);--gold:#d8b36a;--gold2:#ecd08f;--accent:#cdb0b6;--mauve:#7b5566;--fg:#f1eaee;--dim:#a99da4}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.9 "Noto Serif TC","Noto Serif CJK TC","Songti TC",serif}
+a{color:var(--gold2)}
+.bg{position:fixed;inset:0;z-index:0;background:#000}
+.bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s ease}
+.bg img.on{opacity:1}
+.bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,7,12,.55),rgba(9,7,12,.2) 30%,rgba(9,7,12,.2) 70%,rgba(9,7,12,.55)),linear-gradient(180deg,rgba(9,7,12,.3),rgba(9,7,12,.1) 40%,rgba(9,7,12,.6))}
+main{position:relative;z-index:2;max-width:860px;margin:42vh auto 90px;padding:34px 30px 40px;background:rgba(13,10,16,.87);border:1px solid var(--line);
+  backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+h1{color:var(--gold2);font-size:clamp(28px,4.4vw,40px);letter-spacing:.06em;margin:0 0 6px;text-shadow:0 2px 12px #000}
+h1::after{content:"";display:block;width:72px;height:3px;background:var(--accent);margin-top:10px}
+h2{color:var(--gold2);font-size:23px;margin-top:56px;padding-left:12px;border-left:3px solid var(--accent)}h3{color:var(--fg);margin-top:34px}
+table{border-collapse:collapse;width:100%;font-size:15px;display:block;overflow-x:auto}
+td,th{border:1px solid var(--line);padding:7px 11px;vertical-align:top}th{background:var(--card);color:var(--gold2);font-weight:500}tr:nth-child(even) td{background:rgba(26,21,32,.5)}
+blockquote{margin:16px 0;padding:6px 16px;border-left:2px solid var(--gold);color:#d6cbd0;background:rgba(26,21,32,.6)}strong{color:var(--gold2);font-weight:600}
+.play{display:inline-block;margin:10px 0 22px;padding:6px 18px;border:1px solid var(--mauve);border-radius:18px;text-decoration:none;background:var(--mauve);color:#fff}
+.embed .play{display:none}
+.tracks{padding-left:1.4em}.tracks li{margin:14px 0;padding:10px 12px;background:var(--card)}.t b{display:block}.t span{color:var(--dim);font-size:15px}audio{width:100%;margin-top:6px}
+@media (max-width:640px){.bg img{object-position:50% 30%}main{margin-top:46vh;padding:24px 16px 32px}}
+.top{position:fixed;left:0;right:0;top:0;z-index:5;display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 24px 22px;
+  background:linear-gradient(180deg,rgba(9,7,12,.9),rgba(9,7,12,.6) 60%,rgba(9,7,12,0));text-shadow:0 1px 3px #000,0 0 12px rgba(0,0,0,.9)}
+.top .brand{margin:0;color:#ecd08f;font-size:21px;line-height:1.25;letter-spacing:.12em;font-weight:600;text-decoration:none;white-space:nowrap}
+.top .brand small{display:block;font-size:12.5px;font-weight:400;letter-spacing:.24em;color:#cdb0b6}
+.top .sub{color:#d6cbd0;font-size:13px}
+.top nav{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.top nav a{padding:3px 12px;border:1px solid rgba(216,179,106,.3);border-radius:14px;background:rgba(14,10,17,.58);color:#ecd08f;text-decoration:none;font-size:14.5px;line-height:1.7;white-space:nowrap}
+.top nav a.on{background:#7b5566;border-color:#7b5566;color:#fff}
+.embed .top nav a.ext{display:none}
+html,#list{scrollbar-width:thin;scrollbar-color:rgba(205,176,182,.55) rgba(14,10,17,.6)}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-track{background:rgba(14,10,17,.6)}
+::-webkit-scrollbar-thumb{background:rgba(205,176,182,.45);border-radius:5px;border:2px solid rgba(14,10,17,.6)}::-webkit-scrollbar-thumb:hover{background:#cdb0b6}
+@media (max-width:900px){.top{padding:10px 14px 16px;row-gap:6px}.top .brand{font-size:18px}.top .brand small{font-size:11.5px}.top .sub{display:none}.top nav{margin-left:0;gap:5px;flex-wrap:nowrap}.top nav a{padding:2px 7px;font-size:12px}}
+@media (max-width:520px){.top nav{gap:3px}.top nav a{padding:2px 4px;font-size:11px}}
+@media (max-width:400px){.top{padding-left:10px;padding-right:10px}.top nav{gap:2px}.top nav a{padding:2px 3px;font-size:10.5px}}
+footer.foot{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;gap:16px;justify-content:center;align-items:center;flex-wrap:wrap;
+  padding:20px 16px calc(10px + env(safe-area-inset-bottom));font-size:13px;color:#cfc4cb;text-shadow:0 1px 3px #000,0 0 10px #000;
+  background:linear-gradient(0deg,rgba(9,7,12,.92),rgba(9,7,12,.7) 60%,rgba(9,7,12,0))}
+footer.foot a{color:#ecd08f;text-decoration:none}</style><script>if(window.self!==window.top)document.documentElement.classList.add("embed")</script></head><body>
+<header class="top"><a class="brand" href="index.html"><small>洛泉．袁真跡</small>設定集</a><span class="sub">作者的設定筆記，全部劇透</span><nav><a class="ext" href="https://larch.ink/play/market/35e85c22-e262-4ad2-93ca-759f6d8c51f8" target="_blank" rel="noopener">到 Larch 玩</a><a href="story1.html">劇本與 CG</a><a href="characters.html">人物</a><a href="map.html">地圖</a><a href="settings.html" class="on">設定集</a><a href="music/">原聲帶</a><a href="index.html">史料考證</a></nav></header>
+<div class="bg" aria-hidden="true"><img class="on" src="https://cdn.jsdelivr.net/gh/yazelin/larch-zhenji-art@main/cg/v5_ls_d14.6aa7aab2.webp" alt=""><img alt=""></div>
+<main><style>.warn{padding:12px 16px;background:rgba(123,85,102,.2);border:1px solid rgba(205,176,182,.5);font-size:15.5px}</style><h1>洛泉．袁真跡 · 設定集</h1><a class="play" href="https://larch.ink/play/market/35e85c22-e262-4ad2-93ca-759f6d8c51f8">到 Larch 市集玩《洛泉．袁真跡》</a><p class="warn">這一頁是作者的設定筆記，全部劇透。</p>
+<p>這一頁是我寫這部時定下的設定筆記：主角叫什麼、誰知道他是誰、洛泉改了他什麼、書名那兩個字「真跡」指的是哪一份字，還有手寫的字是怎麼做出來的。</p>
+<p>全部劇透，包含賜死那一幕和結尾。還沒讀完的話，先到 Larch 玩，或先讀「劇本與 CG」。</p>
+<h2>書名與題旨</h2>
+<p>「真跡」指袁顯甫親手寫下的字。袁顯甫是袁尚的字，史書記「尚字顯甫」。篇名《袁真跡》唸起來也是「袁甄姬」。</p>
+<p>這部的核心是兩件事擺在一起：一邊是袁尚被一層一層消磨掉，先是外表（男身、名字、聲音），再是心，最後連寫字的手都換成嫂嫂的；另一邊是他親手寫過的字，留得比他的身體、名字、記憶都久。</p>
+<p>最狠的一層，是兩邊都出自曹丕。征服他、抹掉他的人是曹丕，把證據一張一張收起來、收到死的也是曹丕。曹丕寫過「文章不朽」，收著的卻是他親手抹掉的那個人。</p>
+<p>我希望讀者讀完，感覺得到袁顯甫在史書上沒有一行字，他真的存在過。那一箱紙會爛，筆跡沒有人認得，他寫的那一聯詩到今天還查得到，只是掛著別人的名字。</p>
+<h2>時序：五卷照年份排</h2>
+<table>
+<thead>
+<tr>
+<th>卷</th>
+<th>年份</th>
+<th>寫什麼</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一卷〈我君在北〉</td>
+<td>204</td>
+<td>出征前一夜、鄴城破、洛神祠、泉底變身、母親捧起他的臉、營帳第一夜、入府</td>
+</tr>
+<tr>
+<td>第二卷〈身體髮膚〉</td>
+<td>204 冬～207</td>
+<td>學當女人、生下曹叡、甄家來人、試探、抄《孝經》、假首級、攤牌</td>
+</tr>
+<tr>
+<td>第三卷〈燕歌行〉</td>
+<td>207～211</td>
+<td>攤牌之後，曹丕一道一道拆他的心防；阿芷進曹家；第二個孩子；那個表情出現</td>
+</tr>
+<tr>
+<td>第四卷〈司馬門〉</td>
+<td>212～217</td>
+<td>曹丕膩了；被送去曹植那裡；孩子被帶走東征；親口斷了曹植；立太子那夜曹丕沒來</td>
+</tr>
+<tr>
+<td>第五卷〈洛神〉</td>
+<td>217～221，後日談到 239</td>
+<td>大疫、餞行、被留在鄴城、跟女兒的日子、方士、有怨言、賜死、〈洛神賦〉、曹叡復仇</td>
+</tr>
+</tbody>
+</table>
+<p>卷一到卷五之後還有第六章，是史料考證。</p>
+<h2>主角與稱呼規則</h2>
+<p>主角是袁尚，袁紹的幼子。史書說他「少而美」，袁紹想立他為嗣，沒來得及公開就死了（《三國志．袁紹傳》與裴注引《典論》）。本作定他 204 年二十歲上下，比曹丕大三歲，已經成家，沒有孩子。官渡那年（200）他十六歲，站在父親身後看見烏巢的火光，這是本作設定。</p>
+<p>稱呼是這部最花功夫的地方，因為每個人叫他什麼，就是那個人知不知道的證據。</p>
+<ul>
+<li><strong>旁白</strong>盡量寫名字：袁尚、甄氏、曹丕、劉夫人、阿芷。非用代名詞不可時，指袁尚用「他」。</li>
+<li><strong>台詞</strong>看說話的人知不知情。不知情的人對他說「妳」、提到他說「她」；知情的人說「你」「他」。</li>
+<li><strong>講者名牌</strong>：變身前寫「袁尚」。變身後，人前開口寫「甄氏」，獨處和心裡的話寫「袁尚」。</li>
+<li><strong>曹丕叫他</strong>：人前叫「卿」，因為人前叫「顯甫」等於說破。攤牌之後房裡叫「顯甫」（207～211），世上只剩曹丕一個人這樣叫。212 年那個表情出現、征服完了，曹丕改叫「卿」，跟叫任何一個妾一樣。之後曹丕拿「我知道你是誰」壓他、提河北舊事的時候，會改口說「你」，讀者聽到「你」，就知道曹丕在戳他。</li>
+<li><strong>他叫曹丕</strong>：「君」，自稱「妾」。漢代妻子當面叫丈夫「君」（〈孔雀東南飛〉劉蘭芝：「君當作磐石，妾當作蒲葦」），丈夫叫妻子「卿」（焦仲卿：「卿但暫還家」）。「公子」是下人稱貴家子弟的叫法，劇本裡只有僕從、侍女這樣叫曹丕。</li>
+<li><strong>他叫曹植</strong>：「小郎」，見《世說新語．規箴》。</li>
+<li><strong>他叫真甄氏</strong>：「嫂嫂」。<strong>他叫阿芷</strong>：變身前叫她小字「阿芷」，變身後不能這樣叫。<strong>他叫劉夫人</strong>：「阿母」，自稱「兒」。</li>
+<li><strong>心裡自稱</strong>「我」。</li>
+<li><strong>曹叡、東鄉公主叫他</strong>：小時候叫娘，長大、行禮辭行叫母親。</li>
+</ul>
+<p>名字有三個。劇本裡一律用「甄氏」，史書就這樣稱她。對外（簡介、市集標籤）用「甄姬」，因為大家認得、搜得到的是這個名字。「甄宓」史書沒有，是從〈洛神賦〉的宓妃來的，劇中不用。</p>
+<h2>泉與身體</h2>
+<h3>洛神的咒</h3>
+<p>史書有一段：袁紹死後、還沒入殮，劉夫人把袁紹寵愛的五個妾全殺了，又剃髮塗面，毀她們的形體；「尚又為盡殺死者之家」，袁尚接著殺光這五個人的家屬（裴注引《典論》，史料考證有全文）。史書沒有說屍體去了哪裡。</p>
+<p>本作讓五個人沉進鄴城北的洛神祠古泉，劉夫人再把祠門封死。洛神因此被得罪，挑上袁尚：袁家最美、最受寵的兒子，也是殺光那五家人的人。咒的內容是照洛神自己的樣子把他重塑，讓他變成他害死的那種人：美、身不由己、任人處置的女人。</p>
+<p>只有他會變。泉水本身沒有變人的作用，別人掉下去一樣淹死。真甄氏長得像洛神（祠裡神像的臉跟她有幾分像），所以常來上香，所以他變出來的是她的臉。她投泉跟咒無關。</p>
+<p>這件事前兩卷只留謎：封門、「掉下去的人不會浮上來」的傳說、嫂嫂天天到封門外上香、出城路上五戶貼封條的門（封條是他派兵貼的）、他替曹丕挑妾時想起父親那幾個妾，一個名字也不知道。完整揭曉放在第五卷賜死那一刻：聽見「被髮覆面」四個字，他想起那五個女人。賜死時的下場跟她們是同一種：「被髮覆面，以糠塞口」（見《三國志．文德郭皇后傳》裴注引《漢晉春秋》）。</p>
+<h3>他怎麼變成「甄氏」</h3>
+<p>沒有魔法變出衣服。他自己的甲和衣裳隨身體縮小，全部掉下來沉下去。他在暗流裡扯下嫂嫂的月白外衫，爬上來裹住自己，照男人束髮的習慣用金簪胡亂別住一束頭髮，大半還散著。曹丕和劉夫人看到的是甄氏的臉、甄氏那夜的白衣、甄氏的金簪，所以認成甄氏。這對上《世語》的「被髮垢面」和劉夫人攬髮。</p>
+<p>金簪的簪頭是一隻展翅的小金燕，燕尾兩根細長尾羽，沒有垂珠流蘇。他從泉裡只抓住這一支，戴了十七年到死，第五卷洛水神女髮上也是它。燕是〈燕歌行〉，也是幽燕、河北：他頭上一直戴著故鄉。</p>
+<h3>身體</h3>
+<ul>
+<li>完全變成女性，聲音也是，永遠不回男相，反噬也不會讓聲音、樣貌變回去。</li>
+<li>臉是真甄氏的臉，洛泉把它推到神女的程度。瞳色是深棕偏暖的茶褐，右眼下有一顆淡淚痣。</li>
+<li><strong>不會老</strong>，身體停在真甄氏變身那年的樣子（二十一歲），到 221 年賜死都沒老。史書有影子：《魏書》記有人問「后與二子別久……而后顏色更盛，何也？」旁人會發毛：曹丕從十七歲長到三十四歲，郭女王老了，曹叡十六歲時母親看起來只大他幾歲。</li>
+<li><strong>勾起慾望</strong>。見到他的人會被勾起慾望，心裡想要的越多，被勾起的越多，所以曹丕陷得最深。無慾的人不受影響：卞夫人待他始終如一，郭女王也冷靜看穿他異於常人。</li>
+<li><strong>神力衰退</strong>。從 211 年生下第二個孩子之後開始退：人還是美的，勾人的力量變弱，從前放不下他的人，現在看一眼就過去了。這也是曹丕把他丟在鄴城的原因之一。曹植的眼光沒有跟著退，這是他確定曹植真心的證據。</li>
+<li><strong>沒有水神法力，沒有殘魂</strong>。死了就是死了。</li>
+<li><strong>他不知道「洛泉」這回事</strong>。這個說法是我的設定，沒有人告訴過他。他只看得到現象：男人看這張臉的眼神不對，跟袁府時看真甄氏不一樣；211 年後那種眼神變少。所以他的心裡話裡不出現「洛泉的效果」，只寫他看到的眼神。</li>
+</ul>
+<h3>身體與心的落差</h3>
+<p>這部的核心撕裂是：身體不抗拒，心極度排斥。曹丕試的各種方法，總有一種讓身體起反應，袁尚的心卻死守一條線，心裡接受才算享受。所以他臉上做不出曹丕要的表情，而曹丕要的就是那個表情，他在別的女人臉上看過的那種發自內心的表情。拿不到就一直加碼。</p>
+<p>寫的時候讓讀者清楚：身體的反應是背叛，不是默許。房裡的事寫成事實，過程用手、燈、更聲、金簪、被角這些物件交代，不寫露骨。</p>
+<h2>人</h2>
+<p><strong>甄氏／袁尚</strong>：見上面。他的兵器是劍（史書只說「有勇力」，本作定為劍）。妻子是阿芷，母親是劉夫人。</p>
+<p><strong>真甄氏</strong>：袁熙的妻子，182 年十二月生，204 年八月足歲二十一，城破那夜投洛神祠的泉，屍身順暗流沖進漳水。史書記她九歲喜書、荒年勸家人拿存糧接濟親族鄰里。本作讓她寫一手隸書（從少時愛讀書、用哥哥的筆硯延伸出來），袁尚照她每月寄往幽州的家書信封學她的字。她知道五妾沉泉：殺妾一事史書都記得，她住在袁府不可能不知道，一夜之間五個女人不見、祠門封死、巷子裡開始傳「掉下去的人不會浮上來」。所以她天天到封門外上香，是替那五個人上的；城破那夜選同一口泉，她對袁尚說：「袁家的女人會是什麼下場，三公子比我清楚。」</p>
+<p><strong>曹丕</strong>：187 年生，204 年進袁府時十七歲（實際足歲十六）。史書記他擊劍，跟史阿學劍，酒席上拿甘蔗當劍打中鄧展（《典論．自敘》），本作拿這件事讓他教袁尚曹家劍法。他的瞳色深灰褐，偏冷、不帶紅，跟甄夫人的暖茶褐一冷一暖。</p>
+<ul>
+<li>控制和征服是這部的壓迫力，我一句都不減。要刪只能換成更重的。</li>
+<li>他的怕有三層：攤牌前怕自己失控、怕她不像人；攤牌後怕被殺、怕醜聞；最深一層是怕離不開，懷疑這份慾望不是自己的。</li>
+<li>他從不傷害袁家的人：劉夫人在袁府吃穿不少，阿芷進曹家後比守寡時好，叡兒是長子，公主是曹家的女兒。他一再擺給袁尚看的只有一件事：你的人，我能讓他們過得比你在的時候還好。他的狠只對著袁顯甫的自尊。這也是袁尚恨不下去的原因之一。</li>
+<li>226 年他死，四十歲，真相跟著他走了。</li>
+</ul>
+<p><strong>曹植</strong>：嫂稱夫弟「小郎」。少年時看嫂嫂冷冷的像一尊神像，二十歲再看，眼神裡多了一點說不出的東西。他知道嫂嫂是二哥派來的，仍溫柔相待：「我知道是二哥讓妳來的。沒關係。」這是袁尚變成女人後第一個溫柔待他的人。曹植化解了他的心，沒化解他的仇。曹丕發現這件事之後，恨曹植一輩子（接史實：稱帝後一再壓制曹植）。222 年曹植渡洛水，看見神女髮上的金簪，寫下〈洛神賦〉，到死都不知道那是袁顯甫。</p>
+<p><strong>阿芷</strong>：袁尚的妻子，審氏，小字阿芷。史書無名；《後漢書．袁紹傳》記曹操「全尚母妻子，還其財寶」，本作定她是審配的族人，打開東門的審榮是她的堂兄弟，與袁尚沒有孩子。208 年曹丕把她收進曹家做妾，當著袁尚的面佔有她，再當著她的面要袁尚。她認不出甄夫人是丈夫，但卷三、卷四每次她出場，都會撞到一個袁顯甫的習慣，他得當場遮過去，讀者一路在等她認出來。她到死都不認得。217 年冬大疫，她病死，臨終說「姐姐怎麼都不老」，託姐姐哪天能去了替她上墳，她說自己「進了曹家，就不敢去了」。</p>
+<p><strong>李夫人</strong>：史書只有《魏略》兩句：甄后臨死「以帝屬李夫人」，郭太后死後李夫人說出甄后見害的經過。她的出身和交情史書沒寫，本作定她是曹丕早年納的妾，無子、不爭寵，不起眼。卷四〈病中〉塞點心給罰站的叡兒，他記了八年。賜死那天，他把叡兒和公主託給她，因為她是身邊唯一還在的大人，無子不會拿叡兒去爭，活得下去，也見得到孩子。</p>
+<p><strong>郭女王</strong>：字「女王」，是父親說「此乃吾女中王也」取的（《三國志．文德郭皇后傳》）。史書記曹丕被定為繼承人，她出過主意；「甄后之死，由后之寵也」。她無慾，洛泉對她沒有作用，所以能冷靜看出甄夫人異於常人，卻猜不到是誰。她逼曹丕殺甄氏的理由是妖物惑主。她除掉的確實是一個妖，被洛神重塑、非人非女，只是到死都不知道那個妖從前是袁顯甫。</p>
+<p><strong>曹叡</strong>：205 年夏天出生，是 204 年八月營帳那一夜懷上的（史書〈明帝紀〉推算他生於 204 年，裴松之考證甄氏 204 年八月才入曹家，應是 205 年，本作從裴松之說）。他始終不知道母親是誰，只知道母親死得冤。一心盼著的「那就讓你來奪」最後沒有成真：他的三個兒子都沒養大，繼位的曹芳是抱養的，袁家的血到他為止。</p>
+<p><strong>東鄉公主</strong>：史書只記她是甄后所生，216 年隨軍東征，生年、婚配、卒年、本名都沒有留下。本作定她 211 年出生，懷她的時候曹丕已經知道他是袁顯甫。對袁尚來說，她是這副身體失敗的證據，也是親骨肉。對曹叡有算計，對女兒沒有，所以母愛從女兒這邊先冒出來，到第五卷〈母親〉最清楚：梳頭、教字、哄睡、守病。動作是母親的，心裡偶爾冒出父親的念頭，想把她抱上馬背，像當年袁紹抱他那樣。他分不清是父愛還是母愛，後來也不去分了。</p>
+<p><strong>劉夫人</strong>：袁紹之妻，袁尚的生母。史書說她「性酷妒」。204 年城破那天，她捧起甄氏的臉讓曹丕看，捧的是自己兒子的臉，她認不出來。卷四她過府，兩手捧著他的臉，曹丕坐在主位端茶看著，對照卷一那一捧。</p>
+<p><strong>方士</strong>：史書沒有，是本作補的。第五卷他奉郭貴嬪之命到鄴城，在府裡走了三天，看他的手、問他的生辰，又問「袁熙葬在哪裡，夫人去過嗎」。回洛陽後只說一句：「鄴宮有非人非女之大祟。」郭女王聽不懂「非女」，曹丕聽得懂。</p>
+<h2>誰知道什麼</h2>
+<ul>
+<li><strong>甄氏是袁尚</strong>：第一到三卷全天下只有曹丕知道。劉夫人、阿芷、卞夫人、曹植都不知道（曹植只知道嫂嫂是被派來的）。郭女王也不知道，旁人看到的只是一個不會老、美得不自然的甄姬。曹叡始終不知道。226 年曹丕帶著這件事死了，之後只剩讀者知道。</li>
+<li><strong>曹丕怎麼知道的</strong>：不靠任何人告訴。審配受刑那天袁尚攥緊的手、夢話裡的「阿芷」、看地圖時追的路線、抄《孝經》時挑長的那一捺；207 年假首級那一夜，袁尚拔劍刺喉，出手就是刺喉，曹丕認出這是上過戰場的人才有的手，再叫一聲「顯甫」。</li>
+<li><strong>金簪</strong>：曹丕以為是袁熙送的，是前夫的東西，吃醋但從不說出口，每晚先拔那支簪。攤牌之後翻過來：那是嫂嫂的簪，戴它的是袁顯甫。他不再吃這支簪的醋，也不再每晚先拔，簪子不值一提。</li>
+<li><strong>五妾</strong>：真甄氏猜得到；袁尚隱約懂，但「不去想」；劉夫人沉的，是她自己動的手。劇本到第五卷才揭曉。</li>
+<li><strong>城北那座墳</strong>：墳裡是替袁尚舉旗的親衛，他頂著袁尚的名字死在遼東，首級送回鄴城示眾（史書記牽招在首級下設祭）。木牌寫「袁尚，字顯甫」。天下人以為那是袁尚的墳，阿芷也這樣以為，只有袁尚知道墳裡是誰。</li>
+<li><strong>兩種字</strong>：只有曹丕認得燕尾。曹叡打開那口箱子，看不懂母親寫給父親的信為什麼有兩種字，信裡站在父親身後的又是誰。認得出這手字的人都不在了。</li>
+<li><strong>〈塘上行〉末一聯</strong>：曹丕讀成閨怨，讀成那個聲音終於變成甄夫人自己的了。讀不出的是讀者才知道的事：寫的人想的是遼東那顆頂著他名字的首級。</li>
+<li><strong>洛泉與洛神的咒</strong>：袁尚不知道前者；後者在他被髮覆面那一刻才想起來。讀者在那一刻才明白洛神為什麼選他。</li>
+<li><strong>阿芷的名字</strong>：小字外人不知道。曹丕聽見袁尚夢裡叫過一次，那時不知道是誰；後來派人去袁府問出阿芷是袁顯甫的妻子，攤牌時當面講出來。</li>
+</ul>
+<h2>〈真跡〉解讀</h2>
+<p>這是全書的主線。</p>
+<p>全書的真跡，就是那首〈塘上行〉。筆跡是嫂嫂的隸書，章草他寫不回來了；可是一字一句都是他的，十七年沒說出口的事，求死那一夜才寫下來。軍令、〈燕歌行〉、家書上的燕尾是他的筆，替別人說話；〈塘上行〉是他自己的話，用別人的筆。到今天還留在書上的，是後者。</p>
+<h3>兩手字</h3>
+<p>字怎麼寫，我一律照漢末的樣子，而且不用「軟、硬、圓、秀氣」這種形容，改寫看得見的寫法：字形扁或長、燕尾長或短、筆畫連不連、一行寫得快還是慢。</p>
+<ul>
+<li><strong>袁顯甫的字</strong>是章草，河北軍中寫軍令、檄文練出來的。筆畫簡省，一筆帶著一筆，寫得快。捺畫的燕尾挑得又長又急，像刀鋒往右上一掠。這一挑是他的筆跡特徵。</li>
+<li><strong>嫂嫂的字</strong>是隸書，扁方端正，一筆一筆分開寫，燕尾短，收得穩。</li>
+</ul>
+<h3>字跡跟著心防一起走</h3>
+<table>
+<thead>
+<tr>
+<th>階段</th>
+<th>心裡</th>
+<th>紙上</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>204～207 攤牌前</td>
+<td>個我分離：曹丕要的是嫂嫂的臉，受的是這副身子，他躲在甄氏後面</td>
+<td>寫嫂嫂的隸書，當面具戴；自己的章草還藏在底下，一分神就漏出來（〈抄經〉那一捺）</td>
+</tr>
+<tr>
+<td>207 攤牌</td>
+<td>面具被拆掉</td>
+<td>曹丕認出的正是那一捺</td>
+</tr>
+<tr>
+<td>208～211</td>
+<td>曹丕用他自己的東西拆他（聲音、地圖、劍、字）</td>
+<td>要他用自己的字謄閨怨詩〈燕歌行〉、回家書；家書的燕尾一封比一封短</td>
+</tr>
+<tr>
+<td>212～217</td>
+<td>被消滅：不再被叫顯甫，愛上曹植，兩個都等</td>
+<td>〈字〉：想寫一個「令」字，燕尾怎麼也挑不出來，寫出來是嫂嫂的隸書</td>
+</tr>
+<tr>
+<td>221</td>
+<td>最後一次反抗：要死在曹丕手上，要曹丕想起他</td>
+<td>一整夜想寫回章草，寫不回來；手是嫂嫂的，十二聯寫的卻全是他十七年沒對誰說過的事</td>
+</tr>
+</tbody>
+</table>
+<h3>主線：一卷一份真跡</h3>
+<table>
+<thead>
+<tr>
+<th>卷</th>
+<th>真跡</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>出征前夜他寫軍令，燕尾一道一道挑出去。鄴城破城，曹家從袁府抄走一整箱軍令，曹丕讀過。</td>
+</tr>
+<tr>
+<td>二〈抄經〉</td>
+<td>他照嫂嫂的隸書抄《孝經》，抄到「身體髮膚，受之父母」一分神，燕尾挑長了。曹丕認得這一挑，攤牌從這一筆開始。</td>
+</tr>
+<tr>
+<td>三〈燕歌行〉〈家書〉</td>
+<td>曹丕要他用寫軍令的章草謄〈燕歌行〉、回家書，一張一張收起來。收的是這手字背後的人。</td>
+</tr>
+<tr>
+<td>四〈字〉</td>
+<td>燕尾挑不出來了。同一年曹丕不再叫他顯甫。</td>
+</tr>
+<tr>
+<td>五〈有怨言〉</td>
+<td>他要用袁顯甫的字寫〈塘上行〉，讓全天下唯一認得這手字的人看見他。坐了一整夜，送到洛陽的是嫂嫂的隸書。最後一聯他照自己寫：「邊地多悲風，樹木何修修。」曹丕讀成甄夫人在怨他，下了旨。全天下唯一讀得出那一聯是誰的人，沒讀出來。他想以袁顯甫的身分求死，最後是以甄夫人的身分死的。</td>
+</tr>
+<tr>
+<td>後日談</td>
+<td>曹丕死，遺物裡是袁府抄來的那口箱子：最上面〈塘上行〉是隸書，底下〈燕歌行〉、家書是章草，箱底是他當年的軍令。曹叡把〈塘上行〉交給樂府譜曲，當作母親的詩傳下去。紙後來爛了，詩一直有人唱，《玉臺新詠》題「甄皇后」。</td>
+</tr>
+</tbody>
+</table>
+<h3>三首詩、一部書</h3>
+<ul>
+<li><strong>〈燕歌行〉</strong>：史書記為曹丕作。劇中第一份「定本」是他用章草謄的。</li>
+<li><strong>〈塘上行〉</strong>：他作的詩，紙上是嫂嫂的隸書，書上記成甄后作。</li>
+<li><strong>〈洛神賦〉</strong>：曹植作（222），沒經過他的手，寫的是金簪和那張臉。</li>
+<li><strong>《典論．論文》</strong>：曹丕約 217～218 年寫「年壽有時而盡，榮樂止乎其身，二者必至之常期，未若文章之無窮」。曹丕相信文字比人活得久；他收著的那一箱真跡，是袁顯甫留在世上的唯一痕跡，卻沒有人讀得出是誰寫的。</li>
+</ul>
+<p>三首詩都跟他有關，三首都沒有他的名字。史書記下的名字，跟紙上的手、詩裡的人都對不上。這一層我不說破，旁白最多寫到「後來的書上記著」，讓讀者自己對。</p>
+<h3>讀者怎麼認出他</h3>
+<p>讀者不是書法家，CG 也畫不出真的漢末筆跡，所以我不靠讓讀者看圖認字。筆跡只在劇中由人物去認（曹丕認得燕尾）。讀者認的是字句：〈塘上行〉逐聯都能對到劇情。前面幾卷把這些事寫進場面，不引詩、不點破；第五卷之前不引〈塘上行〉的任何一句，全詩出來時讀者自己對上。</p>
+<table>
+<thead>
+<tr>
+<th>聯</th>
+<th>讀者對得到的</th>
+<th>曹丕讀成</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>蒲生我池中，其葉何離離</td>
+<td>「我池」是洛神祠底下那口泉，他在那裡死過一次、被重塑。離離也是別離</td>
+<td>鄴城宮裡的池塘</td>
+</tr>
+<tr>
+<td>傍能行仁義，莫若妾自知</td>
+<td>他是誰，天下只有他自己知道。寫「妾」寫了十六年，沒人看的時候開口還是「妾」</td>
+<td>甄夫人說自己清白</td>
+</tr>
+<tr>
+<td>眾口鑠黃金，使君生別離</td>
+<td>黃金是金燕簪；眾口是說她是妖的那些人</td>
+<td>郭女王的讒言，甄夫人在怨他聽信</td>
+</tr>
+<tr>
+<td>念君去我時，獨愁常苦悲</td>
+<td>220 年曹丕去洛陽，把他留在鄴城</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>想見君顏色，感結傷心脾</td>
+<td>全書是一部「臉」的書：他想見的是曹丕的臉，全天下唯一認得袁顯甫的那張</td>
+<td>甄夫人想他</td>
+</tr>
+<tr>
+<td>念君常苦悲，夜夜不能寐</td>
+<td>寫詩那一整夜</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>莫以豪賢故，棄捐素所愛</td>
+<td>他從前也是河北的豪傑。212 年曹丕不再叫他顯甫，扔下的是「素所愛」，那個男人</td>
+<td>怨他寵新人</td>
+</tr>
+<tr>
+<td>莫以魚肉賤，棄捐蔥與薤</td>
+<td>薤讓人想到漢代挽歌〈薤露〉：人命像薤上的露水</td>
+<td>賤物的比喻</td>
+</tr>
+<tr>
+<td>莫以麻枲賤，棄捐菅與蒯</td>
+<td>麻是孝服，他替曹操戴過，替阿芷戴不了。菅蒯是隨手扔掉的草繩：毀了容、沉進泉裡的五個寵妾，他殺光她們的家人；現在寫這種求情的是他</td>
+<td>賤物的比喻</td>
+</tr>
+<tr>
+<td>出亦復苦愁，入亦復苦愁</td>
+<td>走出去不能是袁顯甫，留在裡面只能是甄夫人。204 年從袁府那道門走進曹府</td>
+<td>宮裡宮外都愁</td>
+</tr>
+<tr>
+<td>邊地多悲風，樹木何修修</td>
+<td>遼東是「袁尚」死的地方：替他舉旗的親衛頂著他的名字死在那裡，哥哥袁熙也死在那裡</td>
+<td>閨怨詩的老套：丈夫在邊地，妻子在家愁。他自己的〈燕歌行〉寫的就是這個</td>
+</tr>
+<tr>
+<td>從君致獨樂，延年壽千秋</td>
+<td>曹丕 226 年死，四十歲，自己寫過「年壽有時而盡」。獨樂：最後抱著一箱紙的只剩他一個</td>
+<td>甄夫人祝他</td>
+</tr>
+</tbody>
+</table>
+<p>「邊地」那一聯的雙關是全詩的鎖。曹丕知道甄夫人是袁尚，他的誤讀是把整首詩讀成閨怨。邊地在閨怨詩裡是丈夫出征的地方，〈燕歌行〉就是這一路，所以他讀得順，以為教出來的那個聲音已經變成他自己的了。注意本作裡袁尚 204 年就困在鄴城，沒有去過烏桓、遼東，邊地的風他沒吹過，是他的名字死在那裡。</p>
+<p>第五卷全詩那張 CG 與全書最後一頁，放的就是這一聯，旁白不解釋。這首詩真的存在（《玉臺新詠》、《樂府詩集》卷三十五），讀者讀完去查，查得到一首掛著甄皇后名字、裡面有邊地的詩。他存在過的證據在書架上。</p>
+<h2>〈塘上行〉是誰作的</h2>
+<p>這首詩的作者在史上有爭議，我先把證據擺出來，再講本作選哪一說。</p>
+<ul>
+<li>《文選》卷二十八陸機〈塘上行〉的李善注引《歌錄》：「〈塘上行〉，古辭。或云甄皇后造，或云魏文帝，或云武帝。」三說並列的原文在這裡。</li>
+<li>《玉臺新詠》題「甄皇后」作。</li>
+<li>《樂府詩集》卷三十五引《鄴都故事》：甄后「為郭皇后所譖，文帝賜死後宮，臨終為詩曰：『蒲生我池中，綠葉何離離。……』」引《樂府解題》：「前志云晉樂奏魏武帝〈蒲生〉篇，而諸集錄皆言其詞文帝甄后所作，歎以讒訴見棄，猶幸得新好不遺故惡焉。」</li>
+<li>晉樂所奏的版本題魏武帝，結尾是「邊地多悲風，樹木何蕭蕭」；本辭的結尾是「樹木何脩脩。從君致獨樂，延年壽千秋」。劇中引的是本辭。</li>
+</ul>
+<p>所以書上掛過三個名字：甄后、曹丕、曹操，沒有一個是袁顯甫。其中兩個，一個是抹掉他的人，一個是打下他家的人。</p>
+<p>本作採甄后說。故事裡的樣子是：詩是他作的，紙上是嫂嫂的隸書，書上記成甄后作。他用嫂嫂的臉活了十七年，最後寫下的詩，也掛上嫂嫂的名字。這一層爭議本身，我也算進了題旨：後來的書記下的名字，跟紙上的手對不上。</p>
+<h2>字是怎麼來的</h2>
+<p>劇裡有幾張疊字的 CG（〈燕歌行〉、家書、《孝經》、〈塘上行〉、碑、〈洛神賦〉）。我不希望字是亂做的，所以每一種字體都查了出處。</p>
+<h3>漢末的字</h3>
+<p>東漢末到三國初，正式文書用隸書，急件、書信用草書（後來叫章草）；行書剛由劉德升傳給鍾繇、胡昭，楷書要再晚一些才成形。所以本作只用隸書和章草，楷書、行書不用。書寫的材料是紙、絹和竹木簡，毛筆，墨，書是捲軸。</p>
+<ul>
+<li><strong>隸書</strong>：衛恆《四體書勢》：「隸書者，篆之捷也。」字形扁方，橫畫起筆藏鋒如蠶頭，捺畫收尾往右上挑出燕尾（波磔）。</li>
+<li><strong>章草</strong>：草寫的隸書，字字分開，字裡的筆畫簡省，捺筆仍有燕尾。張懷瓘《書斷》：「章草之書，字字區別，張芝變為今草」，上下字牽連成一行的是張芝以後的今草，本作不用。崔瑗〈草書勢〉說草書「應時諭指，用於卒迫」，是趕時間用的字，所以軍令、檄文用章草。</li>
+<li>出處全文在史料考證第四節。</li>
+</ul>
+<h3>隸書：青柳</h3>
+<p>隸書的疊字用「青柳隷書しも」。這套字型是免費字型，作者的使用說明寫明：使用沒有任何條件，商用也可以，可以免費再散布，但不能收費；散布時要附上使用方法與解說。原說明檔和字型放在 repo 的 <code>zhenji/fonts/aoyagi/</code>。 <!-- speak-tw-ok：字型原名與缺字替換用的異體字，原樣引用 --></p>
+<p>字型缺幾個字，要補：</p>
+<ul>
+<li>「枲」「蒯」（〈塘上行〉裡「麻枲」「菅蒯」）：用青柳自己的偏旁拼出來。枲拼自「台」「木」，蒯拼自草字頭、「朋」、立刀旁。</li>
+<li>「眾」「黃」「鄉」「蔥」「德」「娛」：青柳沒有，換成異體「衆」「黄」「郷」「葱」「徳」「娯」（衆、郷也比較接近漢隸）。 <!-- speak-tw-ok：字型原名與缺字替換用的異體字，原樣引用 --></li>
+</ul>
+<p>我試過五套隸書字型，最後選青柳。我不是書法家，看不出細節，只看得出這套比較有感覺；我沒有留下逐項比較的理由，所以這裡不替它編一套說法。</p>
+<h3>章草：從皇象《急就章》拓本一個字一個字取</h3>
+<p>袁顯甫的章草，沒有字型可用。我的做法是從公有領域的章草拓本裡，一個字一個字切下來，排成需要的句子。取字的四種來源，都是 Wikimedia Commons 上標為公有領域（Public domain）的掃描：</p>
+<ol>
+<li><strong>皇象《急就章》松江本</strong>：明正統四年（1439）刻石的拓本。主要來源。</li>
+<li><strong>索靖《月儀帖》</strong>：收在《鬱岡齋墨妙》卷七，明萬曆三十九年（1611）刻，國立故宮博物院藏拓。</li>
+<li><strong>《晉人章草帖：出師頌・月儀章》</strong>：日本國立國會圖書館藏。</li>
+<li><strong>趙孟頫書《急就章》冊</strong>：元代墨跡，國立故宮博物院藏。只在松江本缺頁的時候用（「蕭」「燕」「客」三個字）。</li>
+</ol>
+<p>要說清楚這些拓本離漢末多遠：皇象是三國東吳人，索靖是西晉人，趙孟頫是元代人，拓本更是明代刻的。它們都晚於建安，本作用它們代替袁顯甫的軍中章草；這是取字的限制，不是考證結論。</p>
+<p>目前切好的有 55 個單字（<code>zhenji/glyphs_zhangcao/manifest.json</code>），每個字都記了來源、頁數、第幾行第幾個字。其中有幾種不是整字直接切下的，要標明：</p>
+<ul>
+<li><strong>拼字</strong>（10 個）：賤、煢、守、否、搖、落、露、翔、戀、淹。拓本裡找不到整字，從別的字切偏旁拼起來。例如「賤」的貝取自松江本「敗」的左半，戔取自「錢」的右半。</li>
+<li><strong>代字</strong>（1 個）：「雁」。松江本與趙孟頫本「鴻鵠」下的「鴈」都缺，用松江本「鷹」截去下方鳥部代替。</li>
+<li><strong>半字</strong>（1 個）：「妾」寫到一半，只留「立」與「女」的第一筆，用在〈燕歌行〉「賤妾」那一處。</li>
+</ul>
+<p>原拓對照圖在 <code>zhenji/glyphs_zhangcao/contact.png</code>。</p>
+<h2>十道心防</h2>
+<p>洛泉放大了曹丕的慾望，他又是心裡想要最多的人，所以越拆越起勁：每贏一點，想要的就更多，手段一路升級。曹丕拆的是袁尚靠著撐下去的東西，一次一道，每一場換一種拆法。</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>袁尚靠什麼撐</th>
+<th>曹丕怎麼拆</th>
+<th>場景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>「曹丕要的是這張臉，我只是被關在裡面」</td>
+<td>帳中一直叫「顯甫」，問只有袁尚答得出的事。他躲回嫂嫂的臉後面，曹丕把他的臉轉向燈：「我要的不是這張臉。」後半夜他閉眼把臉擺好，曹丕說：「我要的不是這個表情。」</td>
+<td>攤牌後第一夜</td>
+</tr>
+<tr>
+<td>2</td>
+<td>數城，把心思放到河北的地圖上</td>
+<td>曹丕陪他數，每數一座城，就說這座怎麼丟的</td>
+<td>臥房，燈亮著</td>
+</tr>
+<tr>
+<td>3</td>
+<td>這副喉嚨發出的聲音都不算他的</td>
+<td>逼他用河北發令的口氣叫一聲「曹子桓」，出來的是女人的聲音</td>
+<td>臥房</td>
+</tr>
+<tr>
+<td>4</td>
+<td>袁家少主的身分與字跡</td>
+<td>曹丕寫〈燕歌行〉，要他用袁顯甫的字親手謄一遍，這首詩之後傳遍天下</td>
+<td>書房</td>
+</tr>
+<tr>
+<td>5</td>
+<td>武藝</td>
+<td>把劍塞回他手裡：「再刺一次。」他刺不動。曹丕從身後握住他的手，教曹家的劍法</td>
+<td>庭院，月夜</td>
+</tr>
+<tr>
+<td>6</td>
+<td>恨，恨是他活下去的力氣</td>
+<td>曹丕忽然對他好。他病了，曹丕整夜守著，讓人煮河北菜。恨沒有地方可去</td>
+<td>病榻</td>
+</tr>
+<tr>
+<td>7</td>
+<td>身體背叛他，但只有他自己知道</td>
+<td>銅鏡立到床邊，要他看著：「顯甫，你的身子比你老實。」</td>
+<td>臥房</td>
+</tr>
+<tr>
+<td>8</td>
+<td>曹叡：我受的這些，是為了讓他奪你的江山</td>
+<td>曹丕抱著曹叡：「叡兒是我的長子。要他將來坐得穩，往後就由你來。」復仇變成拴住他的繩子</td>
+<td>曹叡房中</td>
+</tr>
+<tr>
+<td>9</td>
+<td>做丈夫的尊嚴</td>
+<td>阿芷進曹家做妾，曹丕叫他教她規矩，再叫兩人同一夜服侍：先看著妻子被佔有，再被妻子看著臣服。這時才崩潰，發現自己還是她的丈夫</td>
+<td>甄夫人房中</td>
+</tr>
+<tr>
+<td>10</td>
+<td>最後一道：他還知道自己是誰</td>
+<td>沒有人動手，身邊的東西一件一件被拿走。妻子和母親認不出他，天下人以為袁尚死在遼東；曹植的往來是他親口斷的。立太子那夜曹丕沒有來，他發現自己在等，曹丕、曹植兩個都等，說不清</td>
+<td>空房，217</td>
+</tr>
+</tbody>
+</table>
+<p>第 1 到 9 道排在第三卷（207～211），第 10 道排在第四卷。</p>
+<h2>看點</h2>
+<ul>
+<li><strong>燕尾</strong>：袁顯甫的筆跡特徵。軍令、〈抄經〉那一捺、家書一封比一封短、〈字〉挑不出來、〈塘上行〉寫成隸書，一條線走到底。</li>
+<li><strong>金燕簪</strong>：從泉裡抓住、戴了十七年的簪子。曹丕以為是前夫的，曹植在洛水看見的也是它，洛水神女髮上同一支。</li>
+<li><strong>卿、顯甫、你</strong>：曹丕叫他的方式，就是這段關係走到哪裡的刻度。</li>
+<li><strong>銅鏡</strong>：梳妝臺上那面，他每天對著它學當甄夫人；第三卷曹丕把它立到床邊。他對著它找白髮，卷四〈病中〉、卷五被丟在鄴城、賜死那天早上，一次比一次絕望，一根都找不到。</li>
+<li><strong>月白</strong>：真甄氏投泉那夜的外衫是月白；賜死那天他換上月白深衣，洛水神女也穿月白。全書開頭和結尾同一個顏色，劇本不說破，只在 CG 裡。</li>
+<li><strong>糠</strong>：賜死詔書要他「被髮覆面，以糠塞口」，跟五個妾「髡頭墨面以毀其形」是同一種下場。後來曹叡逼殺郭太后，同樣令她被髮覆面、以糠塞口。當年封住甄夫人嘴的，封的是袁顯甫的名字；後來封住郭女王嘴的，她嘴裡什麼祕密也沒有，只有一個她到死沒弄懂的「非女」。</li>
+<li><strong>杯子</strong>：〈餞行〉曹植喝的是漆耳杯，賜死那一幕用的是青銅高腳酒杯（見史料考證「耳杯」）。</li>
+<li><strong>最後一頁</strong>：「後來的書上記著：〈塘上行〉，甄皇后作。」接著是那一聯「邊地多悲風，樹木何修修」。</li>
+</ul>
+<h2>留給讀者想的事</h2>
+<p>這幾個地方，劇本不替人物下結論。</p>
+<p><strong>曹丕對他那股說不清的依戀，是什麼？</strong></p>
+<p>攤牌之後，房裡是他唯一不用演的地方；全天下只有曹丕叫他顯甫，仇人成了世上唯一證明袁顯甫還活著的人。恨裡纏進依賴與佔有。劇本不替他下結論，也不讓他承認，旁白不用現代詞。讀者可以讀出「這也許是愛」：被這個人下旨賜死，痛的不只是死。</p>
+<p><strong>曹植愛上的是誰？</strong></p>
+<p>起點是演：204 年他照著嫂嫂學走路說話，甄夫人是他演出來的人。十幾年下來，那張臉裡有真甄氏的臉，也有袁顯甫的心，是慢慢變出來的第三個人。曹丕叫他「顯甫」，叫的是其中一半；曹植喜歡「甄夫人」，喜歡的是另一半；兩半早就分不開。曹植到死不知道。</p>
+<p><strong>他在賜死那一刻懂了什麼？</strong></p>
+<p>他當年殺光五家人，只當是替母親了一樁事，沒把那五個女人當人看。十七年後自己成了美、身不由己、任人處置的人，被髮覆面那一刻才懂她們那一夜的怕，懂那些被他殺掉的人，每一個都是誰的妻子、誰的孩子。我定的是：他受的苦沒有一件是應得的，洛神的咒也不是公道；贖罪發生在理解，用多少苦抵債是另一回事。這件事成不成立，留給讀者。</p>
+<p><strong>留下來的是什麼？</strong></p>
+<p>他的身體沒有了，名字沒有了，紙爛了，筆跡沒人認得。最後留下的是一首掛著別人名字的詩，一直有人唱。</p>
+<p><strong>曹叡三個兒子都沒養大，繼位的是抱養的孩子。</strong></p>
+<p>袁家的血到曹叡為止。他一心盼著的「那就讓你來奪」，沒有成真。後來篡魏的是託孤的司馬家，跟袁家無關。結尾我不寫他贏了。</p></main>
+<footer class="foot"><span>洛泉．袁真跡 · 作者 亞澤 · 配樂由 Google Gemini 生成 · 內容授權 CC BY-NC 4.0</span><a href="index.html">史料考證</a><a href="https://github.com/yazelin/larch-zhenji-canon" target="_blank" rel="noopener" target="_blank" rel="noopener">GitHub</a><a href="https://buymeacoffee.com/yazelin" target="_blank" rel="noopener" target="_blank" rel="noopener">請我喝咖啡</a></footer>
+<script>(function(){var L=document.querySelectorAll('.bg img');if(L.length<2)return;var cur=0,shown=L[0].src;
+function show(src){if(!src||src===shown)return;shown=src;var n=L[1-cur];n.onload=function(){n.classList.add('on');L[cur].classList.remove('on');cur=1-cur};n.src=src}
+var figs=document.querySelectorAll('figure.cg img');if(!figs.length||!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)show((e.target.currentSrc||e.target.src).replace('/thumbs/','/cg/'))})},{rootMargin:'-45% 0px -45% 0px'});
+figs.forEach(function(f){io.observe(f)})})()</script><script>
+/* yz-promo-footer (trimmed) | 三件套+BMC 注意力效果 | https://github.com/yazelin/promo-footer-skill
+   對 footer 既有的 Buy Me a Coffee 連結加 bobbing + 講話氣泡（不重新注入連結）。 */
+(function(){"use strict";
+if(window.__yzPromoInit)return;window.__yzPromoInit=1;
+try{if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return}catch(e){}
+var LINES=["嘿，這裡這裡，我是咖啡按鈕","我是一顆很努力的按鈕，求被點一下","噓，亞澤不知道我在偷偷拉贊助","你看我跳得這麼賣力，不請一杯嗎？","不請也沒關係，你來玩我就很開心","一杯咖啡，是下一個作品的燃料","你的咖啡會變成下一個作品，真的","咖啡因進入亞澤體內，程式碼就會自己寫完","用愛發電中，咖啡因可提升發電效率","覺得好玩嗎？抖內一下下","這個網站沒有廣告，只有我這顆按鈕"];
+var CSS="@keyframes yzIdle{0%,55%,100%{transform:translateY(0)}62%{transform:translateY(-4px)}70%{transform:translateY(0)}78%{transform:translateY(-2px)}84%{transform:translateY(0)}}.yz-idle{animation:yzIdle 2.6s ease-in-out infinite}@keyframes yzHop{0%,100%{transform:translateY(0)}20%{transform:translateY(-6px) scale(1.04)}40%{transform:translateY(0) scale(1)}55%{transform:translateY(-3px)}70%{transform:translateY(0)}}.yz-hop{animation:yzHop .9s cubic-bezier(.36,.07,.19,.97)}.yz-bubble{position:fixed;z-index:2147483000;max-width:200px;padding:6px 11px;border-radius:14px;background:#fffdf7;color:#4a3f35;border:1px solid rgba(0,0,0,.1);box-shadow:0 4px 14px rgba(0,0,0,.18);font:13px/1.5 system-ui,-apple-system,'Noto Sans TC',sans-serif;pointer-events:none;opacity:0;transform:translateY(5px);transition:opacity .25s ease,transform .25s ease}.yz-bubble.yz-on{opacity:1;transform:translateY(0)}.yz-bubble::after{content:'';position:absolute;left:var(--yz-tail,50%);margin-left:-6px;border:6px solid transparent}.yz-bubble.yz-above::after{bottom:-6px;border-bottom:0;border-top:6px solid #fffdf7}.yz-bubble.yz-below::after{top:-6px;border-top:0;border-bottom:6px solid #fffdf7}";
+var bubble,anchor;
+function addCss(){if(document.getElementById("yz-promo-css"))return;var s=document.createElement("style");s.id="yz-promo-css";s.textContent=CSS;document.head.appendChild(s)}
+function findAnchor(){var as=document.querySelectorAll('a[href*="buymeacoffee.com/yazelin"]');if(!as.length)return null;var vis=[],i,r;for(i=0;i<as.length;i++){r=as[i].getBoundingClientRect();if(r.width||r.height)vis.push(as[i])}var pool=vis.length?vis:[].slice.call(as);return pool[pool.length-1]}
+function hop(){anchor.classList.remove("yz-hop");void anchor.offsetWidth;anchor.classList.add("yz-hop")}
+var shown=0,MAX_SHOWS=3;
+function say(){if(document.hidden)return;var r=anchor.getBoundingClientRect();if(!r.width&&!r.height)return;if(r.bottom<0||r.top>innerHeight)return;if(shown>=MAX_SHOWS)return;shown++;bubble.textContent=LINES[Math.floor(Math.random()*LINES.length)];bubble.classList.remove("yz-on","yz-above","yz-below");bubble.style.left="0px";bubble.style.top="0px";var bw=bubble.offsetWidth,bh=bubble.offsetHeight,cx=r.left+r.width/2;var left=Math.max(8,Math.min(cx-bw/2,innerWidth-bw-8));var above=r.top-bh-12>=8;bubble.style.left=left+"px";bubble.style.top=(above?r.top-bh-12:r.bottom+12)+"px";bubble.classList.add(above?"yz-above":"yz-below");bubble.style.setProperty("--yz-tail",Math.max(12,Math.min(cx-left,bw-12))+"px");hop();requestAnimationFrame(function(){bubble.classList.add("yz-on")});setTimeout(function(){bubble.classList.remove("yz-on")},4200)}
+function start(){addCss();anchor=findAnchor();if(!anchor)return false;try{if(getComputedStyle(anchor).display==="inline")anchor.style.display="inline-block"}catch(e){}anchor.classList.add("yz-idle");anchor.addEventListener("animationend",function(e){if(e.animationName==="yzHop")anchor.classList.remove("yz-hop")});bubble=document.createElement("div");bubble.className="yz-bubble";bubble.setAttribute("aria-hidden","true");document.body.appendChild(bubble);window.__yzPromo=say;(function loop(first){if(shown>=MAX_SHOWS)return;setTimeout(function(){say();loop(false)},first?18e3+Math.random()*12e3:9e4+Math.random()*9e4)})(true);return true}
+function boot(){var tries=0;(function t(){if(start())return;if(++tries<20)setTimeout(t,1500)})()}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);else boot();
+})();
+</script></body></html>
