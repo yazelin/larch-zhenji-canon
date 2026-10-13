@@ -1,7 +1,7 @@
 // 袁真跡原聲帶 PWA。快取照壽命分兩層，名字都帶 zhenjiost- 前綴（同 origin 別站的快取不碰）：
 //   SHELL：頁面、曲目表、manifest、圖示，每次部署換名（版號由 music_player.py 用內容 hash 產生）
 //   ASSET：封面、CG、音檔，用到才存（作者 2026-10-05：初次載入不要先載全部），換內容的檔一定換檔名，所以這層不跟著部署換
-const SHELL = "zhenjiost-shell-5d39aae9de", ASSET = "zhenjiost-asset-v1";
+const SHELL = "zhenjiost-shell-a210e3d49d", ASSET = "zhenjiost-asset-v1";
 const SHELL_FILES = ["./", "index.html", "tracks.json", "manifest.webmanifest", "icons/icon-v1-192.png", "icons/icon-v1-512.png", "icons/icon-v1-32.png", "icons/icon-v1-180.png"];
 const KEEP = [SHELL, ASSET];
 const M = { ignoreSearch: true, ignoreVary: true };
